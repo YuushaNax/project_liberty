@@ -1,0 +1,94 @@
+{
+    "--comment": "The world is based on a medieval, fantasy, steampunk setting (but they are common in the dwarvens childs only), so mosrtly of the events can have caracteristics of this world.",
+    "age_1_2":[
+        {
+            "event_name":"first_steps",
+            "description":"intentas recorrer tu hogar por primera vez sin recurrir al gateo, intentas levantarte pero. . ..",
+            "rareness":0.8,
+            "options":[
+                {
+                    "option_name":"Te caes llorando con fuerza",
+                    "description":"caes hacia atras, la sorpresa de tu fallo te hace alzar la voz con llanto, este resuena por toda la casa llamando la atencion de tus padres.",
+                    "effect":{
+                        "agility":-1,
+                        "charisma":1
+                }
+                },
+                {
+                    "option_name":"Caer pero resistir el llanto",
+                    "description":"caes golpeando tu cuerpo con el piso, pero tu orgullo te lo impide soltar el llanto, muerdes ligeramente tus labios y vuelves a levantarte",
+                    "effect":{
+                        "constitution":1,
+                        "charisma":-1
+                    }
+                }
+            ]
+        }
+    ],
+
+    "age_3_5":[
+        {
+            "event_name":"first_friend",
+            "description":"conoces a tu primer amigo, un niño de tu misma edad que vive en la casa de al lado, os veis jugando en el camino fuera de vuestras casas y os acercais a jugar juntos",
+            "rareness":0.7,
+            "options":[
+                {
+                    "option_name":"Te haces su amigo inseparable",
+                    "description":"os haceis amigos inseparables, jugais juntos todos los dias y compartis todos vuestros secretos",
+                    "effect":{
+                        "charisma":2,
+                        "education":1
+                }
+                },
+                {
+                    "option_name":"Os hacéis amigos pero con distancia",
+                    "description":"os hacéis amigos pero con cierta distancia, jugais juntos de vez en cuando pero no compartis muchos secretos",
+                    "effect":{
+                        "charisma":-1
+                        
+                    }
+                },
+                {
+                    "option_name":"No te haces su amigo",
+                    "description":"no te haces su amigo, prefieres jugar solo y no compartir tus secretos con nadie",
+                    "effect":{
+                        "charisma":-2
+                    }
+                }
+            ]
+        }
+    ],
+    "age_6_10":[
+        {
+            "event_name":"first_school_day",
+            "description":"es tu primer dia de trabajo, estas nervioso pero emocionado por conocer a nuevos amigos y aprender cosas nuevas",
+            "rareness":0.9,
+            "options":[
+                {
+                    "option_name":"Te adaptas rápidamente al trabajo",
+                    "description":"te adaptas rápidamente al trabajo, haces amigos facilmente y te gusta aprender cosas nuevas",
+                    "effect":{
+                        "education":2,
+                        "charisma":1
+                }
+                },
+                {
+                    "option_name":"Te adaptas lentamente al trabajo",
+                    "description":"te adaptas lentamente al trabajo, haces algunos amigos pero te cuesta aprender cosas nuevas",
+                    "effect":{
+                        "education":1,
+                        "charisma":-1
+                    }
+                },
+                {
+                    "option_name":"No te adaptas al trabajo",
+                    "description":"no te adaptas al trabajo, no haces amigos y te cuesta mucho aprender cosas nuevas",
+                    "effect":{
+                        "education":-2,
+                        "charisma":-1
+                    }
+                }
+            ]
+        }
+    ]
+}

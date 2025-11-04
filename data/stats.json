@@ -1,0 +1,63 @@
+[
+    {
+    "stat_name": "strength", 
+    "acronym":"STR",
+    "display":"fuerza",
+    "description":"Tu capacidad defísica y poder de ataque fisico."
+    },
+    {
+    "stat_name": "agility",
+    "acronym":"AGI",
+    "display":"agilidad",
+    "description":"Tu capacidad de realizar proezas acrobáticas y moverte con rapidez."
+    },
+    {
+    "stat_name": "dexterity",
+    "acronym":"DEX",
+    "display":"destreza",
+    "description":"Tu capacidad de realizar movimientos precisos y ágiles."
+    },
+    {
+    "stat_name": "constitution",
+    "acronym":"CON",
+    "display":"constitución",
+    "description":"Tu capacidad de resistencia física, enfermedades y arcanas naturales ."
+    },
+    {
+    "stat_name": "intellect",
+    "acronym":"INT",
+    "display":"intelecto",
+    "description":"Tu capacidad de razonamiento, aprendizaje y comprensión."
+    },
+    {
+    "stat_name":"psique",
+    "acronym":"PSI",
+    "display":"Psique",
+    "description":"La capacidad espiritual y resistencia a lo sobrenatural"
+    },
+    {
+    "stat_name": "will",
+    "acronym":"WIL",
+    "display":"voluntad",
+    "description":"La fortaleza mental, tenacidad y resistencia a la manipulación"
+    },
+    {
+    "stat_name": "perception",
+    "acronym":"PER",
+    "display":"percepción",
+    "description":"La capacidad de detectar y comprender el entorno que te rodea."
+},
+{
+    "stat_name": "education",
+    "acronym":"EDU",
+    "display":"educación",
+    "description":"La capacidad de aprender, comprender y aplicar conocimientos."
+},
+{
+    "stat_name": "charisma",
+    "acronym":"CHA",
+    "display":"carisma",
+    "description":"La capacidad de influir y atraer a los demás."
+}
+
+]

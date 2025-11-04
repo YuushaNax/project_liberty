@@ -1,0 +1,59 @@
+[
+    {
+        "skill_name": "short_blades",
+        "display": "Arma corta",
+        "description": "Habilidad con armas cortas como cuchillos, dagas y espadas cortas.",
+        "skill_type": "combat",
+        "related_stats": [
+            "strength",
+            "agility"
+        ],
+        "related_actions": 
+        [
+            "attack",
+            "defend"
+        ],
+        "related_weapons_types": [
+            "dagger",
+            "short_sword",
+            "knife"
+        ]
+    },
+    {
+        "skill_name": "two_handed",
+        "display": "Arma a dos manos",
+        "description": "Habilidad con armas que requieren ambas manos, como espadas largas y hachas.",
+        "skill_type": "combat",
+        "related_stats": [
+            "strength",
+            "agility"
+        ],
+        "related_actions": 
+        [
+            "attack",
+            "defend"
+        ],
+        "related_weapons_types": [
+            "two_handed_sword",
+            "battle_axe"
+        ]
+    },
+    {
+        "skill_name": "archery",
+        "display": "Arquería",
+        "description": "Habilidad con arcos y flechas, permite atacar a distancia.",
+        "skill_type": "combat",
+        "related_stats": [
+            "agility",
+            "perception"
+        ],
+        "related_actions": 
+        [
+            "attack"
+        ],
+        "related_weapons_types": [
+            "bow",
+            "crossbow"
+        ]
+    }
+]

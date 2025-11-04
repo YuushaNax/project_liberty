@@ -1,0 +1,18 @@
+
+[
+    
+    {
+        "profession_name": "warrior",
+        "display": "Guerrero",
+        "description": "Luchador experto en combate cuerpo a cuerpo.",
+        "primary_skills": [
+            "two_handed",
+            "short_blades",
+            "archery"
+        ],
+        "secondary_skills": [
+            "defense",
+            "tactics"
+        ]
+    }
+]

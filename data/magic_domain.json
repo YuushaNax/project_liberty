@@ -1,0 +1,168 @@
+[
+    {
+
+        "name": "Fire",
+        "display": "Fuego",
+        "description": "Dominio de fuego, permite manipular llamas y calor.",
+           "speciality":{
+               "offensive": 0.95,
+               "defensive": 0.35,
+               "utility": 0.30,
+               "support": 0.20,
+               "healing": 0.10,
+               "morphing": 0.15,
+               "summoning": 0.10,
+               "spatial_manipulation": 0.05
+           }
+    },
+    {
+        "name": "Water",
+        "display": "Agua",  
+        "description": "Dominio de agua, permite manipular líquidos y humedad.",
+           "speciality":{
+               "offensive": 0.60,
+               "defensive": 0.55,
+               "utility": 0.70,
+               "support": 0.80,
+               "healing": 0.90,
+               "morphing": 0.50,
+               "summoning": 0.30,
+               "spatial_manipulation": 0.20
+           }
+    },
+    {
+        "name": "Earth",
+        "display": "Tierra",
+        "description": "Dominio de tierra, permite manipular rocas y minerales.",
+           "speciality":{
+               "offensive": 0.65,
+               "defensive": 0.90,
+               "utility": 0.50,
+               "support": 0.40,
+               "healing": 0.20,
+               "morphing": 0.60,
+               "summoning": 0.25,
+               "spatial_manipulation": 0.30
+           }
+    },
+    {
+        "name": "Air",
+        "display": "Aire",
+        "description": "Dominio de aire, permite manipular viento y presión atmosférica.",
+           "speciality":{
+               "offensive": 0.70,
+               "defensive": 0.40,
+               "utility": 0.90,
+               "support": 0.60,
+               "healing": 0.25,
+               "morphing": 0.80,
+               "summoning": 0.20,
+               "spatial_manipulation": 0.50
+           }
+    },
+    {
+        "name": "Lightning",
+        "display": "Rayo",
+        "description": "Dominio de relámpagos, permite manipular electricidad y tormentas.",
+           "speciality":{
+               "offensive": 0.95,
+               "defensive": 0.30,
+               "utility": 0.80,
+               "support": 0.25,
+               "healing": 0.10,
+               "morphing": 0.20,
+               "summoning": 0.10,
+               "spatial_manipulation": 0.40
+           }   
+    },
+    {
+        "name": "Holy",
+        "display": "Sagrado",
+        "description": "Dominio sagrado, permite manipular luz y energía divina.",
+           "speciality":{
+               "offensive": 0.50,
+               "defensive": 0.70,
+               "utility": 0.40,
+               "support": 0.95,
+               "healing": 0.95,
+               "morphing": 0.20,
+               "summoning": 0.30,
+               "spatial_manipulation": 0.10
+           }
+    },
+    {
+        "name": "Void",
+        "display": "Vacío",
+        "description": "Dominio del vacío, permite manipular la nada y la ausencia de materia.",
+           "speciality":{
+               "offensive": 0.70,
+               "defensive": 0.30,
+               "utility": 0.90,
+               "support": 0.20,
+               "healing": 0.05,
+               "morphing": 0.60,
+               "summoning": 0.80,
+               "spatial_manipulation": 0.95
+           }
+    },
+    {
+        "name": "Dark",
+        "display": "Oscuridad",
+        "description": "Dominio de la oscuridad, permite manipular sombras y energía negativa.",
+           "speciality":{
+               "offensive": 0.90,
+               "defensive": 0.40,
+               "utility": 0.60,
+               "support": 0.20,
+               "healing": 0.10,
+               "morphing": 0.50,
+               "summoning": 0.80,
+               "spatial_manipulation": 0.30
+           }
+    },
+    {
+        "name": "Light",
+        "display": "Luz",
+        "description": "Dominio de la luz, permite manipular la iluminación y la energía positiva.",
+           "speciality":{
+               "offensive": 0.60,
+               "defensive": 0.60,
+               "utility": 0.70,
+               "support": 0.90,
+               "healing": 0.95,
+               "morphing": 0.20,
+               "summoning": 0.20,
+               "spatial_manipulation": 0.10
+           }   
+    },
+    {
+        "name": "Blood",
+        "display": "Sangre",
+        "description": "Dominio de la sangre, permite manipular fluidos corporales y la vitalidad.",
+           "speciality":{
+               "offensive": 0.80,
+               "defensive": 0.40,
+               "utility": 0.50,
+               "support": 0.60,
+               "healing": 0.80,
+               "morphing": 0.40,
+               "summoning": 0.30,
+               "spatial_manipulation": 0.10
+           }
+    },
+    {
+        "name": "Poison",
+        "display": "Veneno",
+        "description": "Dominio del veneno, permite manipular toxinas y sustancias nocivas.",
+           "speciality":{
+               "offensive": 0.90,
+               "defensive": 0.30,
+               "utility": 0.70,
+               "support": 0.20,
+               "healing": 0.05,
+               "morphing": 0.30,
+               "summoning": 0.40,
+               "spatial_manipulation": 0.05
+           }   
+    }
+]

@@ -1,0 +1,328 @@
+{
+    "traits": [
+        {
+            "id": "aggressive",
+            "name": "Aggressive",
+            "description": "Prefers direct confrontation and quick escalation in conflicts.",
+            "tags": ["combat", "hostile", "bold"],
+            "intensity": { "min": 0, "max": 100, "default": 60 },
+            "conflicts": ["timid", "pacifist"],
+            "synergies": ["impulsive", "ruthless"]
+        },
+        {
+            "id": "charming",
+            "name": "Charming",
+            "description": "Uses charisma to influence others and smooth social situations.",
+            "tags": ["social", "persuasion", "friendly"],
+            "intensity": { "min": 0, "max": 100, "default": 55 },
+            "conflicts": ["blunt", "awkward"],
+            "synergies": ["manipulative", "talkative"]
+        },
+        {
+            "id": "talkative",
+            "name": "Talkative",
+            "description": "Talks a lot; shares information and opinion freely.",
+            "tags": ["social", "information", "gossip"],
+            "intensity": { "min": 0, "max": 100, "default": 50 },
+            "conflicts": ["taciturn"],
+            "synergies": ["gossipy", "charming"]
+        },
+        {
+            "id": "taciturn",
+            "name": "Taciturn",
+            "description": "Speaks little; private and reserved.",
+            "tags": ["social", "secretive"],
+            "intensity": { "min": 0, "max": 100, "default": 30 },
+            "conflicts": ["talkative", "gossipy"],
+            "synergies": ["secretive", "stoic"]
+        },
+        {
+            "id": "impulsive",
+            "name": "Impulsive",
+            "description": "Acts on instinct with little forethought.",
+            "tags": ["combat", "decision", "risk"],
+            "intensity": { "min": 0, "max": 100, "default": 45 },
+            "conflicts": ["cautious", "meticulous"],
+            "synergies": ["aggressive", "reckless"]
+        },
+        {
+            "id": "cautious",
+            "name": "Cautious",
+            "description": "Careful planner; avoids unnecessary risks.",
+            "tags": ["decision", "stealth", "survival"],
+            "intensity": { "min": 0, "max": 100, "default": 65 },
+            "conflicts": ["impulsive", "reckless"],
+            "synergies": ["meticulous", "suspicious"]
+        },
+        {
+            "id": "greedy",
+            "name": "Greedy",
+            "description": "Places high value on personal gain and wealth.",
+            "tags": ["trade", "selfish", "opportunist"],
+            "intensity": { "min": 0, "max": 100, "default": 50 },
+            "conflicts": ["altruistic"],
+            "synergies": ["manipulative", "cunning"]
+        },
+        {
+            "id": "altruistic",
+            "name": "Altruistic",
+            "description": "Helps others, often at personal cost.",
+            "tags": ["social", "helpful", "heroic"],
+            "intensity": { "min": 0, "max": 100, "default": 40 },
+            "conflicts": ["greedy", "ruthless"],
+            "synergies": ["loyal", "compassionate"]
+        },
+        {
+            "id": "curious",
+            "name": "Curious",
+            "description": "Eager to explore and learn, even at risk.",
+            "tags": ["exploration", "knowledge", "quest"],
+            "intensity": { "min": 0, "max": 100, "default": 60 },
+            "conflicts": ["apathetic"],
+            "synergies": ["talkative", "impulsive"]
+        },
+        {
+            "id": "sarcastic",
+            "name": "Sarcastic",
+            "description": "Uses biting humor and irony in interactions.",
+            "tags": ["social", "humor", "demeanor"],
+            "intensity": { "min": 0, "max": 100, "default": 35 },
+            "conflicts": ["earnest"],
+            "synergies": ["witty", "blunt"]
+        },
+        {
+            "id": "loyal",
+            "name": "Loyal",
+            "description": "Stays true to friends, allies, and causes.",
+            "tags": ["social", "ally", "dependable"],
+            "intensity": { "min": 0, "max": 100, "default": 70 },
+            "conflicts": ["treacherous"],
+            "synergies": ["honor_bound", "altruistic"]
+        },
+        {
+            "id": "manipulative",
+            "name": "Manipulative",
+            "description": "Skilled at steering others for personal ends.",
+            "tags": ["social", "deception", "strategy"],
+            "intensity": { "min": 0, "max": 100, "default": 45 },
+            "conflicts": ["honest"],
+            "synergies": ["charming", "greedy"]
+        },
+        {
+            "id": "honor_bound",
+            "name": "Honor-bound",
+            "description": "Acts according to a strict personal code.",
+            "tags": ["ethics", "quest", "duty"],
+            "intensity": { "min": 0, "max": 100, "default": 55 },
+            "conflicts": ["ruthless", "deceptive"],
+            "synergies": ["loyal", "brave"]
+        },
+        {
+            "id": "cowardly",
+            "name": "Cowardly",
+            "description": "Avoids danger and will flee when threatened.",
+            "tags": ["survival", "fearful"],
+            "intensity": { "min": 0, "max": 100, "default": 25 },
+            "conflicts": ["brave", "honor_bound"],
+            "synergies": ["timid", "suspicious"]
+        },
+        {
+            "id": "adventurous",
+            "name": "Adventurous",
+            "description": "Seeks new experiences and thrives on uncertainty.",
+            "tags": ["exploration", "risk_taker"],
+            "intensity": { "min": 0, "max": 100, "default": 60 },
+            "conflicts": ["homebody"],
+            "synergies": ["curious", "talkative"]
+        },
+        {
+            "id": "superstitious",
+            "name": "Superstitious",
+            "description": "Makes decisions based on omens and rituals.",
+            "tags": ["beliefs", "behavioral"],
+            "intensity": { "min": 0, "max": 100, "default": 30 },
+            "conflicts": ["rational"],
+            "synergies": ["cautious", "timid"]
+        },
+        {
+            "id": "compassionate",
+            "name": "Compassionate",
+            "description": "Feels and acts on empathy toward others.",
+            "tags": ["social", "healer", "support"],
+            "intensity": { "min": 0, "max": 100, "default": 50 },
+            "conflicts": ["ruthless"],
+            "synergies": ["altruistic", "patient"]
+        },
+        {
+            "id": "vengeful",
+            "name": "Vengeful",
+            "description": "Remembers slights and seeks retribution.",
+            "tags": ["memory", "hostile", "grudge"],
+            "intensity": { "min": 0, "max": 100, "default": 40 },
+            "conflicts": ["forgiving"],
+            "synergies": ["ruthless", "suspicious"]
+        },
+        {
+            "id": "patient",
+            "name": "Patient",
+            "description": "Will wait for the right moment; tolerates delays.",
+            "tags": ["timing", "planning"],
+            "intensity": { "min": 0, "max": 100, "default": 65 },
+            "conflicts": ["impatient", "impulsive"],
+            "synergies": ["meticulous", "cautious"]
+        },
+        {
+            "id": "impatient",
+            "name": "Impatient",
+            "description": "Frustrated by delays; pushes for immediate results.",
+            "tags": ["timing", "stress"],
+            "intensity": { "min": 0, "max": 100, "default": 35 },
+            "conflicts": ["patient"],
+            "synergies": ["impulsive", "talkative"]
+        },
+        {
+            "id": "meticulous",
+            "name": "Meticulous",
+            "description": "Pays attention to small details and routines.",
+            "tags": ["craft", "planning", "accuracy"],
+            "intensity": { "min": 0, "max": 100, "default": 60 },
+            "conflicts": ["sloppy", "impulsive"],
+            "synergies": ["cautious", "patient"]
+        },
+        {
+            "id": "sloppy",
+            "name": "Sloppy",
+            "description": "Careless about order and precision; improvises.",
+            "tags": ["craft", "chaos"],
+            "intensity": { "min": 0, "max": 100, "default": 25 },
+            "conflicts": ["meticulous"],
+            "synergies": ["reckless", "lazy"]
+        },
+        {
+            "id": "witty",
+            "name": "Witty",
+            "description": "Quick with clever or amusing remarks.",
+            "tags": ["social", "humor"],
+            "intensity": { "min": 0, "max": 100, "default": 45 },
+            "conflicts": ["serious"],
+            "synergies": ["sarcastic", "charming"]
+        },
+        {
+            "id": "blunt",
+            "name": "Blunt",
+            "description": "Tells the truth plainly, often without tact.",
+            "tags": ["social", "honest"],
+            "intensity": { "min": 0, "max": 100, "default": 40 },
+            "conflicts": ["charming", "diplomatic"],
+            "synergies": ["honest", "stoic"]
+        },
+        {
+            "id": "diplomatic",
+            "name": "Diplomatic",
+            "description": "Skilled at resolving disputes and finding compromise.",
+            "tags": ["social", "negotiation"],
+            "intensity": { "min": 0, "max": 100, "default": 55 },
+            "conflicts": ["ruthless", "blunt"],
+            "synergies": ["charming", "patient"]
+        },
+        {
+            "id": "naive",
+            "name": "Naive",
+            "description": "Tends to take things at face value and trust easily.",
+            "tags": ["trust", "vulnerability"],
+            "intensity": { "min": 0, "max": 100, "default": 30 },
+            "conflicts": ["cunning", "suspicious"],
+            "synergies": ["trusting", "altruistic"]
+        },
+        {
+            "id": "stoic",
+            "name": "Stoic",
+            "description": "Shows little emotion and handles hardship calmly.",
+            "tags": ["emotion", "endurance"],
+            "intensity": { "min": 0, "max": 100, "default": 50 },
+            "conflicts": ["emotional", "talkative"],
+            "synergies": ["patient", "honor_bound"]
+        },
+        {
+            "id": "emotional",
+            "name": "Emotional",
+            "description": "Displays feelings openly; decisions colored by mood.",
+            "tags": ["mood", "social"],
+            "intensity": { "min": 0, "max": 100, "default": 45 },
+            "conflicts": ["stoic", "calm"],
+            "synergies": ["compassionate", "talkative"]
+        },
+        {
+            "id": "lazy",
+            "name": "Lazy",
+            "description": "Avoids effort when possible; prefers easy solutions.",
+            "tags": ["work", "motivation"],
+            "intensity": { "min": 0, "max": 100, "default": 20 },
+            "conflicts": ["industrious", "meticulous"],
+            "synergies": ["sloppy", "apathetic"]
+        },
+        {
+            "id": "industrious",
+            "name": "Industrious",
+            "description": "Hardworking and motivated to complete tasks.",
+            "tags": ["work", "drive"],
+            "intensity": { "min": 0, "max": 100, "default": 70 },
+            "conflicts": ["lazy"],
+            "synergies": ["meticulous", "patient"]
+        },
+        {
+            "id": "secretive",
+            "name": "Secretive",
+            "description": "Keeps information close and reveals little.",
+            "tags": ["social", "spy", "privacy"],
+            "intensity": { "min": 0, "max": 100, "default": 50 },
+            "conflicts": ["talkative", "gossipy"],
+            "synergies": ["taciturn", "suspicious"]
+        },
+        {
+            "id": "gossipy",
+            "name": "Gossipy",
+            "description": "Spreads news (true or not); seeks social currency.",
+            "tags": ["social", "information", "talk"],
+            "intensity": { "min": 0, "max": 100, "default": 40 },
+            "conflicts": ["secretive"],
+            "synergies": ["talkative", "curious"]
+        },
+        {
+            "id": "suspicious",
+            "name": "Suspicious",
+            "description": "Distrusts motives of others and expects betrayal.",
+            "tags": ["trust", "defense"],
+            "intensity": { "min": 0, "max": 100, "default": 55 },
+            "conflicts": ["trusting", "naive"],
+            "synergies": ["cautious", "secretive"]
+        },
+        {
+            "id": "trusting",
+            "name": "Trusting",
+            "description": "Gives others the benefit of the doubt; easily convinced.",
+            "tags": ["social", "vulnerability"],
+            "intensity": { "min": 0, "max": 100, "default": 35 },
+            "conflicts": ["suspicious"],
+            "synergies": ["naive", "altruistic"]
+        },
+        {
+            "id": "brave",
+            "name": "Brave",
+            "description": "Faces danger willingly and stands for others.",
+            "tags": ["combat", "courage"],
+            "intensity": { "min": 0, "max": 100, "default": 65 },
+            "conflicts": ["cowardly"],
+            "synergies": ["honor_bound", "loyal"]
+        },
+        {
+            "id": "ruthless",
+            "name": "Ruthless",
+            "description": "Will use any means to achieve goals; lacks mercy.",
+            "tags": ["hostile", "strategy", "cold"],
+            "intensity": { "min": 0, "max": 100, "default": 30 },
+            "conflicts": ["compassionate", "honor_bound"],
+            "synergies": ["manipulative", "greedy"]
+        }
+    ]
+}

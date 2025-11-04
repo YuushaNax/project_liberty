@@ -1,0 +1,81 @@
+[
+    {
+        "race_name": "human",
+        "display":"humano",
+        "description":"Los humanos son una raza versátil y adaptable, con una amplia gama de habilidades y talentos.",
+        "modifiers": 
+        [
+            {
+                "stat_name": "education",
+                "modifier": 2.0
+            }
+
+        ],
+        "skills_modifiers": 
+        [
+
+        ],
+        "normal_max_life_span": 100.0,
+        "maturity": 15.0,
+        "max_height": 200.0,
+        "abilities": ["adaptability"]
+    },
+    {
+        "race_name":"orc",
+        "display":"orco",
+        "description":"Los orcos son una raza fuerte y resistente, conocidos por su ferocidad en la batalla y su habilidad para sobrevivir en condiciones adversas.",
+        "modifiers": 
+    [
+            {
+                "stat_name": "strength",
+                "modifier": 3.0
+            },
+            {
+                "stat_name": "constitution",
+                "modifier": 2.0
+            },
+            {
+                "stat_name": "dexterity",
+                "modifier": -1.0
+            }
+    ],
+        "skills_modifiers": 
+    [
+
+    ],
+        "normal_max_life_span": 60.0,
+        "maturity": 12.0,
+        "max_height": 213.36
+    },
+    {
+        "race_name":"elf",
+        "display":"elfo",
+        "description":"Los elfos son una raza ágil y astuta, conocidos por su destreza en la magia y su conexión con la naturaleza.",
+        "modifiers": 
+    [
+            {
+                "stat_name": "strength",
+                "modifier": -1.0
+            },
+            {
+                "stat_name": "constitution",
+                "modifier": -1.0
+            },
+            {
+                "stat_name": "dexterity",
+                "modifier": 2.0
+            },
+            {
+                "stat_name": "intellect",
+                "modifier": 2.0
+            }
+    ],
+        "skills_modifiers": 
+    [
+
+    ],
+        "normal_max_life_span": 300.0,
+        "maturity": 40.0,
+        "max_height": 170.36
+    }
+]
