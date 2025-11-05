@@ -1,22 +1,96 @@
 {
-    "--comment": "The world is based on a medieval, fantasy, steampunk setting (but they are common in the dwarvens childs only), so mosrtly of the events can have caracteristics of this world.",
+    "--comment": "Eventos de infancia y antecedentes para la creación de personaje en un mundo medieval-fantástico con toques steampunk. Cada evento tiene opciones que modifican atributos (puedes adaptar nombres de atributos a tu sistema).",
+    "birth":[
+        {
+            "event_name":"noble_birth",
+            "description":"Naces en una familia acomodada con títulos y responsabilidades. Te criaron con expectativas y cierta protección.",
+            "rareness":0.6,
+            "options":[
+                {
+                    "option_name":"Heredas cierta educación y modales",
+                    "description":"Recibes tutores privados, etiqueta y acceso a redes que abrirán puertas.",
+                    "effect":{
+                        "education":2,
+                        "charisma":1,
+                        "wealth":1
+                    }
+                },
+                {
+                    "option_name":"Sufres presión y resentimiento",
+                    "description":"La expectativa asfixia, te vuelves desconfiado y ansioso por rendimiento.",
+                    "effect":{
+                        "charisma":-1,
+                        "luck":-1,
+                        "education":1
+                    }
+                }
+            ]
+        },
+        {
+            "event_name":"foundling",
+            "description":"Eres dejado en un orfanato o a la puerta de alguien; nadie conoce tus orígenes.",
+            "rareness":0.3,
+            "options":[
+                {
+                    "option_name":"Aprendes a valerte por ti mismo",
+                    "description":"La vida dura te hace callejero y astuto.",
+                    "effect":{
+                        "stealth":2,
+                        "perception":1,
+                        "charisma":-1
+                    }
+                },
+                {
+                    "option_name":"Adoptado con cariño",
+                    "description":"Aunque sin linaje, creces en un hogar que te da estabilidad.",
+                    "effect":{
+                        "constitution":1,
+                        "charisma":1
+                    }
+                }
+            ]
+        },
+        {
+            "event_name":"twin_or_sibling_bond",
+            "description":"Naces con un gemelo o hermano cercano; la relación marcará tu identidad.",
+            "rareness":0.4,
+            "options":[
+                {
+                    "option_name":"Hermandad inseparable",
+                    "description":"Formáis un equipo: compartís habilidades y protección mutua.",
+                    "effect":{
+                        "charisma":1,
+                        "luck":1
+                    }
+                },
+                {
+                    "option_name":"Rivalidad constante",
+                    "description":"La comparación te obliga a esforzarte o resentirte.",
+                    "effect":{
+                        "education":1,
+                        "charisma":-1
+                    }
+                }
+            ]
+        }
+    ],
     "age_1_2":[
         {
             "event_name":"first_steps",
-            "description":"intentas recorrer tu hogar por primera vez sin recurrir al gateo, intentas levantarte pero. . ..",
+            "description":"Intentas recorrer tu hogar por primera vez sin recurrir al gateo.",
             "rareness":0.8,
             "options":[
                 {
                     "option_name":"Te caes llorando con fuerza",
-                    "description":"caes hacia atras, la sorpresa de tu fallo te hace alzar la voz con llanto, este resuena por toda la casa llamando la atencion de tus padres.",
+                    "description":"La caída provoca un llanto que atrae atención y consuelo.",
                     "effect":{
                         "agility":-1,
                         "charisma":1
-                }
+                    }
                 },
                 {
                     "option_name":"Caer pero resistir el llanto",
-                    "description":"caes golpeando tu cuerpo con el piso, pero tu orgullo te lo impide soltar el llanto, muerdes ligeramente tus labios y vuelves a levantarte",
+                    "description":"Muerdes tus labios y te levantas orgulloso.",
                     "effect":{
                         "constitution":1,
                         "charisma":-1
@@ -25,34 +99,56 @@
             ]
         }
     ],
-
     "age_3_5":[
         {
             "event_name":"first_friend",
-            "description":"conoces a tu primer amigo, un niño de tu misma edad que vive en la casa de al lado, os veis jugando en el camino fuera de vuestras casas y os acercais a jugar juntos",
+            "description":"Conoces a tu primer amigo de la infancia.",
             "rareness":0.7,
             "options":[
                 {
-                    "option_name":"Te haces su amigo inseparable",
-                    "description":"os haceis amigos inseparables, jugais juntos todos los dias y compartis todos vuestros secretos",
+                    "option_name":"Amigo inseparable",
+                    "description":"Compartís juegos y secretos, aprendes cooperación.",
                     "effect":{
                         "charisma":2,
                         "education":1
-                }
-                },
-                {
-                    "option_name":"Os hacéis amigos pero con distancia",
-                    "description":"os hacéis amigos pero con cierta distancia, jugais juntos de vez en cuando pero no compartis muchos secretos",
-                    "effect":{
-                        "charisma":-1
-                        
                     }
                 },
                 {
-                    "option_name":"No te haces su amigo",
-                    "description":"no te haces su amigo, prefieres jugar solo y no compartir tus secretos con nadie",
+                    "option_name":"Amistad distante",
+                    "description":"Jugáis ocasionalmente; aprendes independencia.",
                     "effect":{
-                        "charisma":-2
+                        "charisma":-1
+                    }
+                },
+                {
+                    "option_name":"Prefieres jugar solo",
+                    "description":"Te vuelves reservado y autosuficiente.",
+                    "effect":{
+                        "charisma":-2,
+                        "perception":1
+                    }
+                }
+            ]
+        },
+        {
+            "event_name":"pet_companion",
+            "description":"Consigues un animal compañero (perro, hurón, pájaro, etc.) que te acompaña en la infancia.",
+            "rareness":0.5,
+            "options":[
+                {
+                    "option_name":"Compañía leal",
+                    "description":"El vínculo con el animal te enseña empatía y responsabilidad.",
+                    "effect":{
+                        "charisma":1,
+                        "perception":1
+                    }
+                },
+                {
+                    "option_name":"Pérdida temprana",
+                    "description":"El animal muere o se pierde; aprendes dolor y resiliencia.",
+                    "effect":{
+                        "constitution":1,
+                        "charisma":-1
                     }
                 }
             ]
@@ -61,30 +157,330 @@
     "age_6_10":[
         {
             "event_name":"first_school_day",
-            "description":"es tu primer dia de trabajo, estas nervioso pero emocionado por conocer a nuevos amigos y aprender cosas nuevas",
+            "description":"Es tu primer día en la escuela o trabajo infantil.",
             "rareness":0.9,
             "options":[
                 {
-                    "option_name":"Te adaptas rápidamente al trabajo",
-                    "description":"te adaptas rápidamente al trabajo, haces amigos facilmente y te gusta aprender cosas nuevas",
+                    "option_name":"Te adaptas rápidamente",
+                    "description":"Haces amigos y aprendes con facilidad.",
                     "effect":{
                         "education":2,
                         "charisma":1
-                }
+                    }
                 },
                 {
-                    "option_name":"Te adaptas lentamente al trabajo",
-                    "description":"te adaptas lentamente al trabajo, haces algunos amigos pero te cuesta aprender cosas nuevas",
+                    "option_name":"Te adaptas lentamente",
+                    "description":"Te cuesta integrarte y aprender.",
                     "effect":{
                         "education":1,
                         "charisma":-1
                     }
                 },
                 {
-                    "option_name":"No te adaptas al trabajo",
-                    "description":"no te adaptas al trabajo, no haces amigos y te cuesta mucho aprender cosas nuevas",
+                    "option_name":"No te adaptas",
+                    "description":"Te aíslas y pierdes interés por estudiar.",
                     "effect":{
                         "education":-2,
+                        "charisma":-1
+                    }
+                }
+            ]
+        },
+        {
+            "event_name":"sickness_childhood",
+            "description":"Enfermedad prolongada en la infancia que marca tu desarrollo.",
+            "rareness":0.4,
+            "options":[
+                {
+                    "option_name":"Recuperación completa",
+                    "description":"Superas la enfermedad y desarrollas resistencia.",
+                    "effect":{
+                        "constitution":2,
+                        "luck":-1
+                    }
+                },
+                {
+                    "option_name":"Secuelas leves",
+                    "description":"Queda una pequeña limitación física o fragilidad.",
+                    "effect":{
+                        "constitution":-1,
+                        "perception":1
+                    }
+                }
+            ]
+        }
+    ],
+    "age_11_15":[
+        {
+            "event_name":"apprenticeship_offer",
+            "description":"Te proponen ser aprendiz de un oficio (herrero, boticario, relojero, músico...).",
+            "rareness":0.7,
+            "options":[
+                {
+                    "option_name":"Aprendes el oficio con pasión",
+                    "description":"Te conviertes en un aprendiz aplicado, dominas técnicas básicas.",
+                    "effect":{
+                        "crafting":2,
+                        "education":1,
+                        "wealth":1
+                    }
+                },
+                {
+                    "option_name":"Aburrimiento y abandono",
+                    "description":"El oficio no te interesa y lo dejas.",
+                    "effect":{
+                        "crafting":-1,
+                        "charisma":-1
+                    }
+                },
+                {
+                    "option_name":"Te haces aprendiz secreto",
+                    "description":"Aprendes a escondidas técnicas peligrosas o raras.",
+                    "effect":{
+                        "crafting":1,
+                        "stealth":1,
+                        "luck":-1
+                    }
+                }
+            ]
+        },
+        {
+            "event_name":"discover_magic",
+            "description":"Detectas por primera vez una afinidad con lo arcano o lo sobrenatural.",
+            "rareness":0.25,
+            "options":[
+                {
+                    "option_name":"Desarrollas la aptitud",
+                    "description":"Eres capaz de canalizar pequeñas manifestaciones mágicas.",
+                    "effect":{
+                        "magic":2,
+                        "perception":1
+                    }
+                },
+                {
+                    "option_name":"Reprimes el don",
+                    "description":"Temor social o religioso te obliga a ocultarlo.",
+                    "effect":{
+                        "magic":-1,
+                        "stealth":1
+                    }
+                }
+            ]
+        },
+        {
+            "event_name":"bullying",
+            "description":"Sufres hostigamiento o intimidación en la escuela o el barrio.",
+            "rareness":0.5,
+            "options":[
+                {
+                    "option_name":"Aprendes a defenderte",
+                    "description":"Te vuelves más duro y habilidoso en peleas.",
+                    "effect":{
+                        "strength":1,
+                        "agility":1
+                    }
+                },
+                {
+                    "option_name":"Te retraes",
+                    "description":"La experiencia te hace inseguro y reservado.",
+                    "effect":{
+                        "charisma":-2,
+                        "perception":1
+                    }
+                }
+            ]
+        },
+        {
+            "event_name":"first_love",
+            "description":"Experimentas un amor o romance juvenil que te marca emocionalmente.",
+            "rareness":0.6,
+            "options":[
+                {
+                    "option_name":"Relación duradera",
+                    "description":"Aprendes compromiso y apoyo mutuo.",
+                    "effect":{
+                        "charisma":2,
+                        "luck":1
+                    }
+                },
+                {
+                    "option_name":"Corazón roto",
+                    "description":"La pérdida te hace más cínico y reservado.",
+                    "effect":{
+                        "charisma":-1,
+                        "education":1
+                    }
+                }
+            ]
+        }
+    ],
+    "age_16_20":[
+        {
+            "event_name":"guild_initiation",
+            "description":"Te ofrecen un lugar en un gremio o clan profesional (mercaderes, artesanos, ladrones, etc.).",
+            "rareness":0.6,
+            "options":[
+                {
+                    "option_name":"Te unes formalmente",
+                    "description":"Obtienes entrenamiento, contactos y recursos del gremio.",
+                    "effect":{
+                        "crafting":2,
+                        "wealth":1,
+                        "education":1
+                    }
+                },
+                {
+                    "option_name":"Rechazas la atadura",
+                    "description":"Prefieres libertad a cambio de menos seguridad económica.",
+                    "effect":{
+                        "stealth":1,
+                        "luck":1,
+                        "wealth":-1
+                    }
+                }
+            ]
+        },
+        {
+            "event_name":"war_recruitment",
+            "description":"Conflicto local o conscripción te arrastra al servicio militar por un tiempo.",
+            "rareness":0.3,
+            "options":[
+                {
+                    "option_name":"Emerges como soldado competente",
+                    "description":"Entrenamiento y batalla te endurecen y enseñan liderazgo.",
+                    "effect":{
+                        "strength":2,
+                        "constitution":1,
+                        "charisma":1
+                    }
+                },
+                {
+                    "option_name":"Vives el horror y lo evitas",
+                    "description":"La guerra te traumatiza, buscas paz y evitas conflictos.",
+                    "effect":{
+                        "constitution":-1,
+                        "perception":2
+                    }
+                }
+            ]
+        },
+        {
+            "event_name":"noble_patron",
+            "description":"Un noble o patrón te apadrina: te financia estudios o te encomienda tareas.",
+            "rareness":0.35,
+            "options":[
+                {
+                    "option_name":"Aceptas y te formas",
+                    "description":"Acceso a educación y misiónes que mejoran tus oportunidades.",
+                    "effect":{
+                        "education":2,
+                        "charisma":1,
+                        "wealth":1
+                    }
+                },
+                {
+                    "option_name":"El patrón exige lealtad costosa",
+                    "description":"Te obliga a favores que empañan tu reputación.",
+                    "effect":{
+                        "charisma":-1,
+                        "luck":-1,
+                        "wealth":2
+                    }
+                }
+            ]
+        },
+        {
+            "event_name":"crime_youth",
+            "description":"Caes en actividades ilícitas (robo menor, contrabando) para sobrevivir o por rebelión.",
+            "rareness":0.4,
+            "options":[
+                {
+                    "option_name":"Te especializas y prosperas",
+                    "description":"Habilidad en engaño y movimientos sigilosos.",
+                    "effect":{
+                        "stealth":2,
+                        "perception":1,
+                        "wealth":1
+                    }
+                },
+                {
+                    "option_name":"Capturado y marcado",
+                    "description":"Condena o estigma social que limita oportunidades legales.",
+                    "effect":{
+                        "charisma":-2,
+                        "luck":-1
+                    }
+                }
+            ]
+        }
+    ],
+    "special_events":[
+        {
+            "event_name":"marked_by_fae",
+            "description":"Un encuentro con lo sobrenatural te deja una marca o favor que altera tu destino.",
+            "rareness":0.1,
+            "options":[
+                {
+                    "option_name":"Bendición leve",
+                    "description":"Pequeñas ventajas extrañas: intuiciones o suerte ocasional.",
+                    "effect":{
+                        "luck":2,
+                        "perception":1
+                    }
+                },
+                {
+                    "option_name":"Maldición sutil",
+                    "description":"Problemas extraños aparecien en tu vida; ventajas agridulces.",
+                    "effect":{
+                        "magic":1,
+                        "charisma":-1,
+                        "luck":-1
+                    }
+                }
+            ]
+        },
+        {
+            "event_name":"experimental_device_incident",
+            "description":"Un accidente con tecnología steampunk (vapor, autómatas, artilugios) deja consecuencias físicas o conocimientos.",
+            "rareness":0.15,
+            "options":[
+                {
+                    "option_name":"Aprendes ingeniería práctica",
+                    "description":"Comprendes mecanismos y te vuelves manitas con cacharros.",
+                    "effect":{
+                        "crafting":2,
+                        "education":1
+                    }
+                },
+                {
+                    "option_name":"Secuela mecánica",
+                    "description":"Te quedas con una lesión o implante que cambia tus capacidades.",
+                    "effect":{
+                        "agility":-1,
+                        "strength":1,
+                        "luck":-1
+                    }
+                }
+            ]
+        },
+        {
+            "event_name":"secret_parentage",
+            "description":"Descubres que no eres hijo/a de quien creías; la verdad tiene implicaciones sociales.",
+            "rareness":0.2,
+            "options":[
+                {
+                    "option_name":"Herencia escondida",
+                    "description":"Revelación de linaje que trae recursos y obligaciones.",
+                    "effect":{
+                        "wealth":2,
+                        "charisma":1
+                    }
+                },
+                {
+                    "option_name":"Rechazo y misterio",
+                    "description":"La incertidumbre te hace desconfiado y curioso por tu pasado.",
+                    "effect":{
+                        "perception":2,
                         "charisma":-1
                     }
                 }

@@ -1,11 +1,10 @@
-# entity.py
 class Entity:
     """
     Clase base para representar cualquier entidad del juego (jugador o NPC).
     Contiene stats, habilidades, inventario, estado de salud y otros atributos.
     """
     
-    def __init__(self, name, new_stats):
+    def __init__(self, name, new_stats, height):
         # Información básica
         self.name = name
         self.race = {}          # Puede ser híbrido: {"orc":50, "human":50}
@@ -24,6 +23,20 @@ class Entity:
         self.holded_magic_experience = {}  # Experiencia mágica acumulada
 
         
+        #Atributos Mundanos
+        self.age = 0               # Edad inicial de la entidad
+        self.hunger = 100          # Nivel de hambre
+        self.thirst = 100          # Nivel de sed
+        self.tiredness = 100       # Nivel de cansancio
+        self.weight = 80            # Peso total de la entidad en kilogramos
+        self.height = height        # Altura total de la entidad en centímetros
+        self.inventory_weight_limit = (((self.stats["strength"] * 3) + (self.stats["constitution"]) * 2))  # Límite de peso del inventario en kilogramos
+        self.inventory_weight = 0  # Límite de peso del inventario en kilogramos
+        self.reputation = 0        # Reputación de la entidad
+        self.state = "conscious"  # "conscious", "knocked_out", "Sleep", "poisoned", "dead" and so on
+        self.family = []           # Lista de miembros de la familia (para interacciones y relaciones)
+    
+
         # Inventario y quests
         self.inventory = []       # Objetos que posee la entidad
         self.equipped = {
@@ -83,19 +96,7 @@ class Entity:
         
 
     
-        #Atributos Mundanos
-        self.age = 0               # Edad inicial de la entidad
-        self.hunger = 100          # Nivel de hambre
-        self.thirst = 100          # Nivel de sed
-        self.tiredness = 100       # Nivel de cansancio
-        self.weight = 0            # Peso total de la entidad en kilogramos
-        self.height = 0            # Altura total de la entidad en centímetros
-        self.inventory_weight_limit = (((self.stats["strength"] * 3) + (self.stats["constitution"]) * 2))  # Límite de peso del inventario en kilogramos
-        self.inventory_weight = 0  # Límite de peso del inventario en kilogramos
-        self.reputation = 0        # Reputación de la entidad
-        self.state = "conscious"  # "conscious", "knocked_out", "Sleep", "poisoned", "dead" and so on
-        self.family = []           # Lista de miembros de la familia (para interacciones y relaciones)
-    
+
     # ------------------------------
     # Métodos de combate y habilidades
     # ------------------------------
