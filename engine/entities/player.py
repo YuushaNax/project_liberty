@@ -1,7 +1,7 @@
 import os
 import json
 from InquirerPy import inquirer
-from saves.utilities.entity import Entity
+from engine.entities.entity import Entity
 from pathlib import Path
 import random
 import datetime
