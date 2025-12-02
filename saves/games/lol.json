@@ -1,0 +1,158 @@
+{
+    "name": "lol",
+    "race": {
+        "human": 100
+    },
+    "age": 15,
+    "stats": {
+        "strength": 10,
+        "agility": 10,
+        "dexterity": 10,
+        "constitution": 11,
+        "intellect": 10,
+        "psique": 10,
+        "will": 10,
+        "perception": 10,
+        "education": 28,
+        "charisma": 22
+    },
+    "height": 200,
+    "childhood_journey": [
+        {
+            "age": 0,
+            "event_name": "birth_event_9",
+            "option_name": "Herencia art\u00edstica",
+            "effects": {
+                "charisma": 1,
+                "education": 1
+            }
+        },
+        {
+            "age": 1,
+            "event_name": "first_steps",
+            "option_name": "Caer pero resistir el llanto",
+            "effects": {
+                "constitution": 1,
+                "charisma": -1
+            }
+        },
+        {
+            "age": 2,
+            "event_name": "age1_event_3",
+            "option_name": "Memoria musical",
+            "effects": {
+                "education": 1
+            }
+        },
+        {
+            "age": 3,
+            "event_name": "special_event_30",
+            "option_name": "Aliados ganados",
+            "effects": {
+                "charisma": 1
+            }
+        },
+        {
+            "age": 4,
+            "event_name": "first_friend",
+            "option_name": "Amigo inseparable",
+            "effects": {
+                "charisma": 2,
+                "education": 1
+            }
+        },
+        {
+            "age": 5,
+            "event_name": "first_friend",
+            "option_name": "Amigo inseparable",
+            "effects": {
+                "charisma": 2,
+                "education": 1
+            }
+        },
+        {
+            "age": 6,
+            "event_name": "age6_event_3",
+            "option_name": "Compromiso temprano",
+            "effects": {
+                "education": 1,
+                "charisma": 1
+            }
+        },
+        {
+            "age": 7,
+            "event_name": "first_school_day",
+            "option_name": "Te adaptas r\u00e1pidamente",
+            "effects": {
+                "education": 2,
+                "charisma": 1
+            }
+        },
+        {
+            "age": 8,
+            "event_name": "first_school_day",
+            "option_name": "Te adaptas r\u00e1pidamente",
+            "effects": {
+                "education": 2,
+                "charisma": 1
+            }
+        },
+        {
+            "age": 9,
+            "event_name": "first_school_day",
+            "option_name": "Te adaptas r\u00e1pidamente",
+            "effects": {
+                "education": 2,
+                "charisma": 1
+            }
+        },
+        {
+            "age": 10,
+            "event_name": "first_school_day",
+            "option_name": "Te adaptas r\u00e1pidamente",
+            "effects": {
+                "education": 2,
+                "charisma": 1
+            }
+        },
+        {
+            "age": 11,
+            "event_name": "apprenticeship_offer",
+            "option_name": "Aprendes el oficio con pasi\u00f3n",
+            "effects": {
+                "crafting": 2,
+                "education": 1,
+                "wealth": 1
+            }
+        },
+        {
+            "age": 12,
+            "event_name": "first_love",
+            "option_name": "Relaci\u00f3n duradera",
+            "effects": {
+                "charisma": 2,
+                "luck": 1
+            }
+        },
+        {
+            "age": 13,
+            "event_name": "apprenticeship_offer",
+            "option_name": "Aprendes el oficio con pasi\u00f3n",
+            "effects": {
+                "crafting": 2,
+                "education": 1,
+                "wealth": 1
+            }
+        },
+        {
+            "age": 14,
+            "event_name": "apprenticeship_offer",
+            "option_name": "Aprendes el oficio con pasi\u00f3n",
+            "effects": {
+                "crafting": 2,
+                "education": 1,
+                "wealth": 1
+            }
+        }
+    ]
+}

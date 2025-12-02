@@ -1,490 +1,399 @@
 {
     "--comment": "Eventos de infancia y antecedentes para la creación de personaje en un mundo medieval-fantástico con toques steampunk. Cada evento tiene opciones que modifican atributos (puedes adaptar nombres de atributos a tu sistema).",
-    "birth":[
+    "birth": [
         {
-            "event_name":"noble_birth",
-            "description":"Naces en una familia acomodada con títulos y responsabilidades. Te criaron con expectativas y cierta protección.",
-            "rareness":0.6,
-            "options":[
+            "event_name": "noble_birth",
+            "description": "Naces en una familia acomodada con títulos y responsabilidades. Te criaron con expectativas y cierta protección.",
+            "rareness": 0.6,
+            "options": [
                 {
-                    "option_name":"Heredas cierta educación y modales",
-                    "description":"Recibes tutores privados, etiqueta y acceso a redes que abrirán puertas.",
-                    "effect":{
-                        "education":2,
-                        "charisma":1,
-                        "wealth":1
-                    }
+                    "option_name": "Heredas cierta educación y modales",
+                    "description": "Recibes tutores privados, etiqueta y acceso a redes que abrirán puertas.",
+                    "effect": { "education": 2, "charisma": 1, "wealth": 1 }
                 },
                 {
-                    "option_name":"Sufres presión y resentimiento",
-                    "description":"La expectativa asfixia, te vuelves desconfiado y ansioso por rendimiento.",
-                    "effect":{
-                        "charisma":-1,
-                        "luck":-1,
-                        "education":1
-                    }
+                    "option_name": "Sufres presión y resentimiento",
+                    "description": "La expectativa asfixia, te vuelves desconfiado y ansioso por rendimiento.",
+                    "effect": { "charisma": -1, "luck": -1, "education": 1 }
                 }
             ]
         },
         {
-            "event_name":"foundling",
-            "description":"Eres dejado en un orfanato o a la puerta de alguien; nadie conoce tus orígenes.",
-            "rareness":0.3,
-            "options":[
-                {
-                    "option_name":"Aprendes a valerte por ti mismo",
-                    "description":"La vida dura te hace callejero y astuto.",
-                    "effect":{
-                        "stealth":2,
-                        "perception":1,
-                        "charisma":-1
-                    }
-                },
-                {
-                    "option_name":"Adoptado con cariño",
-                    "description":"Aunque sin linaje, creces en un hogar que te da estabilidad.",
-                    "effect":{
-                        "constitution":1,
-                        "charisma":1
-                    }
-                }
+            "event_name": "foundling",
+            "description": "Eres dejado en un orfanato o a la puerta de alguien; nadie conoce tus orígenes.",
+            "rareness": 0.3,
+            "options": [
+                { "option_name": "Aprendes a valerte por ti mismo", "description": "La vida dura te hace callejero y astuto.", "effect": { "stealth": 2, "perception": 1, "charisma": -1 } },
+                { "option_name": "Adoptado con cariño", "description": "Aunque sin linaje, creces en un hogar que te da estabilidad.", "effect": { "constitution": 1, "charisma": 1 } }
             ]
         },
         {
-            "event_name":"twin_or_sibling_bond",
-            "description":"Naces con un gemelo o hermano cercano; la relación marcará tu identidad.",
-            "rareness":0.4,
-            "options":[
-                {
-                    "option_name":"Hermandad inseparable",
-                    "description":"Formáis un equipo: compartís habilidades y protección mutua.",
-                    "effect":{
-                        "charisma":1,
-                        "luck":1
-                    }
-                },
-                {
-                    "option_name":"Rivalidad constante",
-                    "description":"La comparación te obliga a esforzarte o resentirte.",
-                    "effect":{
-                        "education":1,
-                        "charisma":-1
-                    }
-                }
+            "event_name": "twin_or_sibling_bond",
+            "description": "Naces con un gemelo o hermano cercano; la relación marcará tu identidad.",
+            "rareness": 0.4,
+            "options": [
+                { "option_name": "Hermandad inseparable", "description": "Formáis un equipo: compartís habilidades y protección mutua.", "effect": { "charisma": 1, "luck": 1 } },
+                { "option_name": "Rivalidad constante", "description": "La comparación te obliga a esforzarte o resentirte.", "effect": { "education": 1, "charisma": -1 } }
             ]
+        },
+        {
+            "event_name": "birth_event_4",
+            "description": "Una celebración pública marca tu nacimiento, recibes regalos y atención.",
+            "rareness": 0.5,
+            "options": [ { "option_name": "Recibes presentes útiles", "description": "Obsequios que luego ayudan en la vida.", "effect": { "wealth": 1, "education": 1 } } ]
+        },
+        {
+            "event_name": "birth_event_5",
+            "description": "Un incidente médico casi te cuesta la vida al nacer.",
+            "rareness": 0.15,
+            "options": [ { "option_name": "Te salvas con resistencia", "description": "Te vuelves físicamente más robusto.", "effect": { "constitution": 1 } } ]
+        },
+        {
+            "event_name": "birth_event_6",
+            "description": "La familia proclama una antigua profecía sobre tu destino.",
+            "rareness": 0.08,
+            "options": [ { "option_name": "Creces con expectativas", "description": "La presión modela tu carácter.", "effect": { "charisma": 1, "luck": -1 } } ]
+        },
+        {
+            "event_name": "birth_event_7",
+            "description": "Nacimiento en viaje o exilio; tus primeros recuerdos son de movimiento.",
+            "rareness": 0.2,
+            "options": [ { "option_name": "Adaptabilidad temprana", "description": "Aprendes a cambiar rápido.", "effect": { "perception": 1, "agility": 1 } } ]
+        },
+        {
+            "event_name": "birth_event_8",
+            "description": "Nacimiento con una marca física peculiar.",
+            "rareness": 0.12,
+            "options": [ { "option_name": "Marca notable", "description": "La marca genera atención social.", "effect": { "charisma": -1, "luck": 1 } } ]
+        },
+        {
+            "event_name": "birth_event_9",
+            "description": "Tu madre era artista o músico; tu cuna estaba llena de canciones.",
+            "rareness": 0.4,
+            "options": [ { "option_name": "Herencia artística", "description": "Gusto por la música y la estética.", "effect": { "charisma": 1, "education": 1 } } ]
+        },
+        {
+            "event_name": "birth_event_10",
+            "description": "Tu familia estuvo en deuda; desde el principio te enseñaron economía.",
+            "rareness": 0.35,
+            "options": [ { "option_name": "Educación práctica", "description": "Conocimientos sobre recursos y ahorro.", "effect": { "wealth": 1, "education": 1 } } ]
+        },
+        {
+            "event_name": "birth_event_11",
+            "description": "Naces en el seno de una comunidad pequeña y unida.",
+            "rareness": 0.55,
+            "options": [ { "option_name": "Crianza comunitaria", "description": "Fortaleces la empatía y la cooperación.", "effect": { "charisma": 1, "perception": 1 } } ]
+        },
+        {
+            "event_name": "birth_event_12",
+            "description": "Tu primer llanto fue ensordecedor y recordado por la comadrona.",
+            "rareness": 0.45,
+            "options": [ { "option_name": "Personalidad fuerte", "description": "Firmeza y presencia desde temprano.", "effect": { "charisma": 1, "strength": 1 } } ]
+        },
+        {
+            "event_name": "birth_event_13",
+            "description": "Naces en un hogar de comerciantes; los números y regateos son cotidianos.",
+            "rareness": 0.5,
+            "options": [ { "option_name": "Sentido comercial", "description": "Instinto para tratos y trueques.", "effect": { "wealth": 1, "education": 1 } } ]
+        },
+        {
+            "event_name": "birth_event_14",
+            "description": "Tu nacimiento coincidió con una pequeña celebración religiosa.",
+            "rareness": 0.3,
+            "options": [ { "option_name": "Bendición ritual", "description": "Protección simbólica.", "effect": { "luck": 1, "charisma": 1 } } ]
+        },
+        {
+            "event_name": "birth_event_15",
+            "description": "Uno de los cuidadores era un artesano que te dejó un juguete hecho a mano.",
+            "rareness": 0.65,
+            "options": [ { "option_name": "Afinidad por objetos", "description": "Curiosidad por mecanismos y detalles.", "effect": { "crafting": 1, "perception": 1 } } ]
+        },
+        {
+            "event_name": "birth_event_16",
+            "description": "La familia perdió estatus poco después de tu nacimiento.",
+            "rareness": 0.22,
+            "options": [ { "option_name": "Resiliencia social", "description": "Aprendes a manejar humillaciones.", "effect": { "charisma": -1, "luck": -1 } } ]
+        },
+        {
+            "event_name": "birth_event_17",
+            "description": "Un anciano sabio pronuncia una frase que se convierte en tu lema.",
+            "rareness": 0.18,
+            "options": [ { "option_name": "Lección temprana", "description": "Una enseñanza que guía decisiones.", "effect": { "education": 1 } } ]
+        },
+        {
+            "event_name": "birth_event_18",
+            "description": "Tu familia tuvo un pequeño acto de heroísmo ligado a tu nacimiento.",
+            "rareness": 0.12,
+            "options": [ { "option_name": "Respeto ganado", "description": "La comunidad te mira con cierta deferencia.", "effect": { "charisma": 1, "luck": 1 } } ]
+        },
+        {
+            "event_name": "birth_event_19",
+            "description": "En tu cuna se dejó un objeto misterioso sin dueño.",
+            "rareness": 0.14,
+            "options": [ { "option_name": "Curiosidad por lo oculto", "description": "Interés por secretos y reliquias.", "effect": { "perception": 1, "magic": 1 } } ]
+        },
+        {
+            "event_name": "birth_event_20",
+            "description": "Una leve deformidad al nacer marca tu aspecto.",
+            "rareness": 0.09,
+            "options": [ { "option_name": "Adaptación y fortaleza", "description": "Aprendes a lidiar con miradas.", "effect": { "constitution": 1, "charisma": -1 } } ]
+        },
+        {
+            "event_name": "birth_event_21",
+            "description": "Tu familia compartía historias de viaje; tu cuna olía a tierras lejanas.",
+            "rareness": 0.32,
+            "options": [ { "option_name": "Ganas de explorar", "description": "Deseo por conocer mundos.", "effect": { "luck": 1, "perception": 1 } } ]
+        },
+        {
+            "event_name": "birth_event_22",
+            "description": "Una antigua reliquia familiar pasa a tu custodia simbólica.",
+            "rareness": 0.2,
+            "options": [ { "option_name": "Responsabilidad temprana", "description": "Sentido del deber.", "effect": { "education": 1, "charisma": 1 } } ]
+        },
+        {
+            "event_name": "birth_event_23",
+            "description": "Tu nacimiento fue discreto; poca gente lo recordó.",
+            "rareness": 0.4,
+            "options": [ { "option_name": "Bajo perfil", "description": "Crecimiento sin expectativas públicas.", "effect": { "stealth": 1, "charisma": -1 } } ]
+        },
+        {
+            "event_name": "birth_event_24",
+            "description": "Un médico local te dio un remedio casero que aliviaba llantos.",
+            "rareness": 0.5,
+            "options": [ { "option_name": "Cuidado temprano", "description": "Protección y bienestar infantil.", "effect": { "constitution": 1 } } ]
+        },
+        {
+            "event_name": "birth_event_25",
+            "description": "Tu llegada ayudó a sellar una alianza entre familias.",
+            "rareness": 0.11,
+            "options": [ { "option_name": "Ventaja política", "description": "Beneficio social heredado.", "effect": { "charisma": 1, "wealth": 1 } } ]
+        },
+        {
+            "event_name": "birth_event_26",
+            "description": "Un artesano dejó una pequeña pieza a tu nombre.",
+            "rareness": 0.28,
+            "options": [ { "option_name": "Gusto por lo hecho a mano", "description": "Aprecio por la artesanía.", "effect": { "crafting": 1 } } ]
+        },
+        {
+            "event_name": "birth_event_27",
+            "description": "Se te dio un nombre poco común que genera preguntas.",
+            "rareness": 0.2,
+            "options": [ { "option_name": "Identidad única", "description": "Surgimiento de curiosidad sobre orígenes.", "effect": { "perception": 1 } } ]
+        },
+        {
+            "event_name": "birth_event_28",
+            "description": "La luna llena la noche de tu nacimiento fue recordada por la aldea.",
+            "rareness": 0.16,
+            "options": [ { "option_name": "Mística temprana", "description": "Interés por lo nocturno y místico.", "effect": { "magic": 1, "luck": 1 } } ]
+        },
+        {
+            "event_name": "birth_event_29",
+            "description": "Un vagabundo dejó una bendición simple en tu cuna.",
+            "rareness": 0.22,
+            "options": [ { "option_name": "Suerte discreta", "description": "Pequeños favores del destino.", "effect": { "luck": 1 } } ]
+        },
+        {
+            "event_name": "birth_event_30",
+            "description": "Un familiar te recordó historias de valentía que inspiran respeto.",
+            "rareness": 0.3,
+            "options": [ { "option_name": "Inspiración heredada", "description": "Deseo de emular actos valientes.", "effect": { "strength": 1, "charisma": 1 } } ]
         }
     ],
-    "age_1_2":[
+    "age_1_2": [
+        { "event_name": "first_steps", "description": "Intentas recorrer tu hogar por primera vez sin recurrir al gateo.", "rareness": 0.8, "options": [ { "option_name": "Te caes llorando con fuerza", "description": "La caída provoca un llanto que atrae atención y consuelo.", "effect": { "agility": -1, "charisma": 1 } }, { "option_name": "Caer pero resistir el llanto", "description": "Muerdes tus labios y te levantas orgulloso.", "effect": { "constitution": 1, "charisma": -1 } } ] },
         {
-            "event_name":"first_steps",
-            "description":"Intentas recorrer tu hogar por primera vez sin recurrir al gateo.",
-            "rareness":0.8,
-            "options":[
-                {
-                    "option_name":"Te caes llorando con fuerza",
-                    "description":"La caída provoca un llanto que atrae atención y consuelo.",
-                    "effect":{
-                        "agility":-1,
-                        "charisma":1
-                    }
-                },
-                {
-                    "option_name":"Caer pero resistir el llanto",
-                    "description":"Muerdes tus labios y te levantas orgulloso.",
-                    "effect":{
-                        "constitution":1,
-                        "charisma":-1
-                    }
-                }
-            ]
-        }
+            "event_name": "age1_event_2",
+            "description": "Aprendes a agarrar objetos pequeños con habilidad.",
+            "rareness": 0.7,
+            "options": [ { "option_name": "Manos diestras", "description": "Habilidad manual temprana.", "effect": { "crafting": 1 } } ]
+        },
+        { "event_name": "age1_event_3", "description": "Una canción de cuna te calma y estimula la memoria.", "rareness": 0.6, "options": [ { "option_name": "Memoria musical", "description": "Recuerdos y ritmo.", "effect": { "education": 1 } } ] },
+        { "event_name": "age1_event_4", "description": "Un pequeño accidente te enseña precaución.", "rareness": 0.5, "options": [ { "option_name": "Precaución inculcada", "description": "Cautela frente al peligro.", "effect": { "perception": 1 } } ] },
+        { "event_name": "age1_event_5", "description": "Te fascinan los objetos brillantes.", "rareness": 0.55, "options": [ { "option_name": "Atracción por lo brillante", "description": "Curiosidad por objetos valiosos.", "effect": { "wealth": 1 } } ] },
+        { "event_name": "age1_event_6", "description": "Una mascota te sigue y te protege.", "rareness": 0.4, "options": [ { "option_name": "Vínculo animal", "description": "Compañía y lealtad.", "effect": { "charisma": 1 } } ] },
+        { "event_name": "age1_event_7", "description": "Te asustas con truenos fuertes.", "rareness": 0.3, "options": [ { "option_name": "Temor al ruido", "description": "Sensibilidad a estímulos fuertes.", "effect": { "constitution": -1 } } ] },
+        { "event_name": "age1_event_8", "description": "Un juego simple te enseña reglas.", "rareness": 0.65, "options": [ { "option_name": "Comprendes normas", "description": "Adaptación a reglas sociales.", "effect": { "education": 1, "charisma": 1 } } ] },
+        { "event_name": "age1_event_9", "description": "Descubres que una palabra abre puertas.", "rareness": 0.45, "options": [ { "option_name": "Vocabulario temprano", "description": "Facilidad para comunicarte.", "effect": { "education": 1 } } ] },
+        { "event_name": "age1_event_10", "description": "Un juguete mecánico te fascina.", "rareness": 0.35, "options": [ { "option_name": "Curiosidad por mecanismos", "description": "Interés por autómatas y artilugios.", "effect": { "crafting": 1 } } ] },
+        { "event_name": "age1_event_11", "description": "Un encuentro con un extraño amable te deja confianza.", "rareness": 0.25, "options": [ { "option_name": "Confianza temprana", "description": "Apertura hacia otros.", "effect": { "charisma": 1 } } ] },
+        { "event_name": "age1_event_12", "description": "Un hermano mayor te enseña a compartir.", "rareness": 0.5, "options": [ { "option_name": "Generosidad aprendida", "description": "Cooperación social.", "effect": { "charisma": 1 } } ] },
+        { "event_name": "age1_event_13", "description": "Un alimento nuevo te da placer o aversión.", "rareness": 0.3, "options": [ { "option_name": "Paladar curioso", "description": "Gusto por nuevos sabores.", "effect": { "constitution": 1 } } ] },
+        { "event_name": "age1_event_14", "description": "Te pierdes momentáneamente en casa y aprendes orientación.", "rareness": 0.2, "options": [ { "option_name": "Sentido del lugar", "description": "Mejor percepción espacial.", "effect": { "perception": 1 } } ] },
+        { "event_name": "age1_event_15", "description": "Un juguete roto te enseña reparación básica.", "rareness": 0.22, "options": [ { "option_name": "Manitas tempranas", "description": "Habilidad para arreglar.", "effect": { "crafting": 1 } } ] },
+        { "event_name": "age1_event_16", "description": "Una historia de héroes te inspira juegos imaginativos.", "rareness": 0.4, "options": [ { "option_name": "Imaginación fértil", "description": "Capacidad creativa.", "effect": { "education": 1 } } ] },
+        { "event_name": "age1_event_17", "description": "Aprendes a pedir ayuda y recibir consuelo.", "rareness": 0.5, "options": [ { "option_name": "Confianza en adultos", "description": "Relación segura con cuidadores.", "effect": { "charisma": 1 } } ] },
+        { "event_name": "age1_event_18", "description": "Te sorprende un regalo inesperado.", "rareness": 0.33, "options": [ { "option_name": "Aprecio por dones", "description": "Reconocimiento de favores.", "effect": { "luck": 1 } } ] },
+        { "event_name": "age1_event_19", "description": "La lluvia te fascina y te mojas sin miedo.", "rareness": 0.28, "options": [ { "option_name": "Gusto por la lluvia", "description": "Mayor tolerancia al clima.", "effect": { "constitution": 1 } } ] },
+        { "event_name": "age1_event_20", "description": "Te enseñan una canción de trabajo que te acompaña.", "rareness": 0.34, "options": [ { "option_name": "Ritmo y memoria", "description": "Habilidad mnemónica.", "effect": { "education": 1 } } ] },
+        { "event_name": "age1_event_21", "description": "Practicas pequeños trucos que sorprenden a los mayores.", "rareness": 0.26, "options": [ { "option_name": "Astucia juguetona", "description": "Ingenio para pequeñas soluciones.", "effect": { "stealth": 1 } } ] },
+        { "event_name": "age1_event_22", "description": "Sufres una pequeña fractura pero te recuperas con paciencia.", "rareness": 0.12, "options": [ { "option_name": "Resistencia temprana", "description": "Fortaleza tras curación.", "effect": { "constitution": 1 } } ] },
+        { "event_name": "age1_event_23", "description": "Te enseñan a nombrar plantas y animales comunes.", "rareness": 0.36, "options": [ { "option_name": "Conocimiento natural", "description": "Facilidad para identificar flora y fauna.", "effect": { "perception": 1 } } ] },
+        { "event_name": "age1_event_24", "description": "Un día de juego te deja heridas que curan en tiempo.", "rareness": 0.2, "options": [ { "option_name": "Prudencia aprendida", "description": "Mayor cuidado en juegos futuros.", "effect": { "agility": -1, "constitution": 1 } } ] },
+        { "event_name": "age1_event_25", "description": "Recibes primeros dibujos que fomentan creatividad.", "rareness": 0.4, "options": [ { "option_name": "Dotes artísticas", "description": "Afección por expresión visual.", "effect": { "education": 1 } } ] },
+        { "event_name": "age1_event_26", "description": "Un extraño regala una figurita que guardas con cariño.", "rareness": 0.21, "options": [ { "option_name": "Tesorito preciado", "description": "Apego a objetos simbólicos.", "effect": { "luck": 1 } } ] },
+        { "event_name": "age1_event_27", "description": "Una historia de animales te enseña lecciones morales.", "rareness": 0.37, "options": [ { "option_name": "Moral temprana", "description": "Comprensión básica del bien y mal.", "effect": { "charisma": 1 } } ] },
+        { "event_name": "age1_event_28", "description": "Te animan a compartir y recibes elogios.", "rareness": 0.48, "options": [ { "option_name": "Hábito social", "description": "Compartir como norma.", "effect": { "charisma": 1 } } ] },
+        { "event_name": "age1_event_29", "description": "Una mirada de desaprobación te hace tímido momentáneamente.", "rareness": 0.19, "options": [ { "option_name": "Timidez pasajera", "description": "Cautela en nuevas situaciones.", "effect": { "charisma": -1 } } ] },
+        { "event_name": "age1_event_30", "description": "Aprendes el valor de la paciencia al esperar tu turno.", "rareness": 0.43, "options": [ { "option_name": "Paciencia adquirida", "description": "Mejor control emocional.", "effect": { "charisma": 1, "education": 1 } } ] }
     ],
-    "age_3_5":[
-        {
-            "event_name":"first_friend",
-            "description":"Conoces a tu primer amigo de la infancia.",
-            "rareness":0.7,
-            "options":[
-                {
-                    "option_name":"Amigo inseparable",
-                    "description":"Compartís juegos y secretos, aprendes cooperación.",
-                    "effect":{
-                        "charisma":2,
-                        "education":1
-                    }
-                },
-                {
-                    "option_name":"Amistad distante",
-                    "description":"Jugáis ocasionalmente; aprendes independencia.",
-                    "effect":{
-                        "charisma":-1
-                    }
-                },
-                {
-                    "option_name":"Prefieres jugar solo",
-                    "description":"Te vuelves reservado y autosuficiente.",
-                    "effect":{
-                        "charisma":-2,
-                        "perception":1
-                    }
-                }
-            ]
-        },
-        {
-            "event_name":"pet_companion",
-            "description":"Consigues un animal compañero (perro, hurón, pájaro, etc.) que te acompaña en la infancia.",
-            "rareness":0.5,
-            "options":[
-                {
-                    "option_name":"Compañía leal",
-                    "description":"El vínculo con el animal te enseña empatía y responsabilidad.",
-                    "effect":{
-                        "charisma":1,
-                        "perception":1
-                    }
-                },
-                {
-                    "option_name":"Pérdida temprana",
-                    "description":"El animal muere o se pierde; aprendes dolor y resiliencia.",
-                    "effect":{
-                        "constitution":1,
-                        "charisma":-1
-                    }
-                }
-            ]
-        }
+    "age_3_5": [
+        { "event_name": "first_friend", "description": "Conoces a tu primer amigo de la infancia.", "rareness": 0.7, "options": [ { "option_name": "Amigo inseparable", "description": "Compartís juegos y secretos, aprendes cooperación.", "effect": { "charisma": 2, "education": 1 } }, { "option_name": "Amistad distante", "description": "Jugáis ocasionalmente; aprendes independencia.", "effect": { "charisma": -1 } }, { "option_name": "Prefieres jugar solo", "description": "Te vuelves reservado y autosuficiente.", "effect": { "charisma": -2, "perception": 1 } } ] },
+        { "event_name": "pet_companion", "description": "Consigues un animal compañero (perro, hurón, pájaro, etc.) que te acompaña en la infancia.", "rareness": 0.5, "options": [ { "option_name": "Compañía leal", "description": "El vínculo con el animal te enseña empatía y responsabilidad.", "effect": { "charisma": 1, "perception": 1 } }, { "option_name": "Pérdida temprana", "description": "El animal muere o se pierde; aprendes dolor y resiliencia.", "effect": { "constitution": 1, "charisma": -1 } } ] },
+        { "event_name": "age3_event_3", "description": "Aprendes juegos con reglas más complejas.", "rareness": 0.6, "options": [ { "option_name": "Estratega infantil", "description": "Planificación temprana.", "effect": { "education": 1 } } ] },
+        { "event_name": "age3_event_4", "description": "Una pequeña rivalidad te enseña competitividad.", "rareness": 0.45, "options": [ { "option_name": "Ganas de mejorar", "description": "Impulso competitivo.", "effect": { "strength": 1 } } ] },
+        { "event_name": "age3_event_5", "description": "Descubres un escondite secreto muy tuyo.", "rareness": 0.55, "options": [ { "option_name": "Refugio propio", "description": "Lugar para pensar y observar.", "effect": { "perception": 1 } } ] },
+        { "event_name": "age3_event_6", "description": "Te enseñan a compartir responsabilidades pequeñas.", "rareness": 0.5, "options": [ { "option_name": "Sentido del deber", "description": "Responsabilidad temprana.", "effect": { "education": 1, "charisma": 1 } } ] },
+        { "event_name": "age3_event_7", "description": "Un pequeño accidente te hace temer juegos peligrosos.", "rareness": 0.3, "options": [ { "option_name": "Cautela aprendida", "description": "Menor imprudencia.", "effect": { "agility": -1 } } ] },
+        { "event_name": "age3_event_8", "description": "Descubres un talento para imitar voces o gestos.", "rareness": 0.35, "options": [ { "option_name": "Habilidad interpretativa", "description": "Encanto en actuaciones.", "effect": { "charisma": 1 } } ] },
+        { "event_name": "age3_event_9", "description": "Aprendes a reconocer constelaciones sencillas.", "rareness": 0.2, "options": [ { "option_name": "Mirada al cielo", "description": "Curiosidad por lo celeste.", "effect": { "perception": 1, "education": 1 } } ] },
+        { "event_name": "age3_event_10", "description": "Te muestran herramientas básicas y te permiten usarlas con cuidado.", "rareness": 0.4, "options": [ { "option_name": "Manos prudentes", "description": "Habilidad manual segura.", "effect": { "crafting": 1 } } ] },
+        { "event_name": "age3_event_11", "description": "Aprendes una rima que facilita el recuerdo de mapas simples.", "rareness": 0.25, "options": [ { "option_name": "Memoria topográfica", "description": "Orientación mejorada.", "effect": { "perception": 1 } } ] },
+        { "event_name": "age3_event_12", "description": "Te enseñan a cuidar plantas en casa.", "rareness": 0.33, "options": [ { "option_name": "Conexión con la naturaleza", "description": "Conocimiento básico botánico.", "effect": { "perception": 1 } } ] },
+        { "event_name": "age3_event_13", "description": "Un artesano local te regala pequeñas piezas que despiertan interés.", "rareness": 0.28, "options": [ { "option_name": "Gusto por la artesanía", "description": "Interés por crear.", "effect": { "crafting": 1 } } ] },
+        { "event_name": "age3_event_14", "description": "Te enseñan a remar o nadar en aguas tranquilas.", "rareness": 0.3, "options": [ { "option_name": "Habilidad acuática", "description": "Confianza en el agua.", "effect": { "constitution": 1, "agility": 1 } } ] },
+        { "event_name": "age3_event_15", "description": "Participas en juegos de rol improvisados con otros niños.", "rareness": 0.5, "options": [ { "option_name": "Liderazgo lúdico", "description": "Capacidad para organizar juegos.", "effect": { "charisma": 1 } } ] },
+        { "event_name": "age3_event_16", "description": "Un cuento de miedo te deja cauteloso ante lo desconocido.", "rareness": 0.2, "options": [ { "option_name": "Precaución nocturna", "description": "Mayor prudencia.", "effect": { "perception": 1, "charisma": -1 } } ] },
+        { "event_name": "age3_event_17", "description": "Descubres pequeños trucos de destreza con las manos.", "rareness": 0.36, "options": [ { "option_name": "Habilidad manual", "description": "Destreza fina temprana.", "effect": { "crafting": 1, "agility": 1 } } ] },
+        { "event_name": "age3_event_18", "description": "Un mentor ocasional te enseña disciplina básica.", "rareness": 0.22, "options": [ { "option_name": "Disciplina incipiente", "description": "Mejora de hábitos.", "effect": { "education": 1 } } ] },
+        { "event_name": "age3_event_19", "description": "Una pequeña aventura con amigos forja recuerdos duraderos.", "rareness": 0.4, "options": [ { "option_name": "Coraje compartido", "description": "Valentía en compañía.", "effect": { "charisma": 1, "luck": 1 } } ] },
+        { "event_name": "age3_event_20", "description": "Te enseñan una táctica simple de caza o recolección.", "rareness": 0.27, "options": [ { "option_name": "Sobrevivencia básica", "description": "Habilidad para obtener comida.", "effect": { "perception": 1, "constitution": 1 } } ] },
+        { "event_name": "age3_event_21", "description": "Participas en una representación infantil local.", "rareness": 0.31, "options": [ { "option_name": "Actuación temprana", "description": "Confianza en el escenario.", "effect": { "charisma": 1 } } ] },
+        { "event_name": "age3_event_22", "description": "Una leve enfermedad te enseña a valorar la salud.", "rareness": 0.2, "options": [ { "option_name": "Cuidado personal", "description": "Valores sobre higiene y descanso.", "effect": { "constitution": 1 } } ] },
+        { "event_name": "age3_event_23", "description": "Encuentras un talismán que alguien dejó atrás.", "rareness": 0.18, "options": [ { "option_name": "Objeto curioso", "description": "Interés por lo misterioso.", "effect": { "luck": 1 } } ] },
+        { "event_name": "age3_event_24", "description": "Te enseñan a reconocer patrones sencillos en trabajo manual.", "rareness": 0.35, "options": [ { "option_name": "Aptitud mecánica", "description": "Comprensión de secuencias.", "effect": { "crafting": 1 } } ] },
+        { "event_name": "age3_event_25", "description": "Participas en un festival infantil y aprendes tradiciones.", "rareness": 0.4, "options": [ { "option_name": "Raíces culturales", "description": "Conexión con la comunidad.", "effect": { "charisma": 1 } } ] },
+        { "event_name": "age3_event_26", "description": "Un encuentro con un anciano te deja una lección de paciencia.", "rareness": 0.2, "options": [ { "option_name": "Saber escuchar", "description": "Madurez emocional.", "effect": { "charisma": 1 } } ] },
+        { "event_name": "age3_event_27", "description": "Aprendes a identificar voces y tonos.", "rareness": 0.24, "options": [ { "option_name": "Oído refinado", "description": "Mejor percepción auditiva.", "effect": { "perception": 1 } } ] },
+        { "event_name": "age3_event_28", "description": "Un juego de construcción despierta interés por estructuras.", "rareness": 0.33, "options": [ { "option_name": "Ingenio temprano", "description": "Habilidad para planificar formas simples.", "effect": { "crafting": 1 } } ] },
+        { "event_name": "age3_event_29", "description": "Te enseñan a curar pequeñas heridas.", "rareness": 0.21, "options": [ { "option_name": "Primeros auxilios", "description": "Cuidado básico de lesiones.", "effect": { "constitution": 1 } } ] },
+        { "event_name": "age3_event_30", "description": "Una noche de historias te inspira para crear relatos.", "rareness": 0.29, "options": [ { "option_name": "Narrador en ciernes", "description": "Talento para contar historias.", "effect": { "charisma": 1, "education": 1 } } ] }
     ],
-    "age_6_10":[
-        {
-            "event_name":"first_school_day",
-            "description":"Es tu primer día en la escuela o trabajo infantil.",
-            "rareness":0.9,
-            "options":[
-                {
-                    "option_name":"Te adaptas rápidamente",
-                    "description":"Haces amigos y aprendes con facilidad.",
-                    "effect":{
-                        "education":2,
-                        "charisma":1
-                    }
-                },
-                {
-                    "option_name":"Te adaptas lentamente",
-                    "description":"Te cuesta integrarte y aprender.",
-                    "effect":{
-                        "education":1,
-                        "charisma":-1
-                    }
-                },
-                {
-                    "option_name":"No te adaptas",
-                    "description":"Te aíslas y pierdes interés por estudiar.",
-                    "effect":{
-                        "education":-2,
-                        "charisma":-1
-                    }
-                }
-            ]
-        },
-        {
-            "event_name":"sickness_childhood",
-            "description":"Enfermedad prolongada en la infancia que marca tu desarrollo.",
-            "rareness":0.4,
-            "options":[
-                {
-                    "option_name":"Recuperación completa",
-                    "description":"Superas la enfermedad y desarrollas resistencia.",
-                    "effect":{
-                        "constitution":2,
-                        "luck":-1
-                    }
-                },
-                {
-                    "option_name":"Secuelas leves",
-                    "description":"Queda una pequeña limitación física o fragilidad.",
-                    "effect":{
-                        "constitution":-1,
-                        "perception":1
-                    }
-                }
-            ]
-        }
+    "age_6_10": [
+        { "event_name": "first_school_day", "description": "Es tu primer día en la escuela o trabajo infantil.", "rareness": 0.9, "options": [ { "option_name": "Te adaptas rápidamente", "description": "Haces amigos y aprendes con facilidad.", "effect": { "education": 2, "charisma": 1 } }, { "option_name": "Te adaptas lentamente", "description": "Te cuesta integrarte y aprender.", "effect": { "education": 1, "charisma": -1 } }, { "option_name": "No te adaptas", "description": "Te aíslas y pierdes interés por estudiar.", "effect": { "education": -2, "charisma": -1 } } ] },
+        { "event_name": "sickness_childhood", "description": "Enfermedad prolongada en la infancia que marca tu desarrollo.", "rareness": 0.4, "options": [ { "option_name": "Recuperación completa", "description": "Superas la enfermedad y desarrollas resistencia.", "effect": { "constitution": 2, "luck": -1 } }, { "option_name": "Secuelas leves", "description": "Queda una pequeña limitación física o fragilidad.", "effect": { "constitution": -1, "perception": 1 } } ] },
+        { "event_name": "age6_event_3", "description": "Comienzas tareas que implican responsabilidad diaria.", "rareness": 0.6, "options": [ { "option_name": "Compromiso temprano", "description": "Responsable y organizado.", "effect": { "education": 1, "charisma": 1 } } ] },
+        { "event_name": "age6_event_4", "description": "Aprendes a leer o a mejorar la lectura.", "rareness": 0.7, "options": [ { "option_name": "Lectura temprana", "description": "Facilidad para estudiar.", "effect": { "education": 2 } } ] },
+        { "event_name": "age6_event_5", "description": "Te enseñan nociones básicas de aritmética.", "rareness": 0.65, "options": [ { "option_name": "Cálculo inicial", "description": "Habilidad numérica.", "effect": { "education": 1 } } ] },
+        { "event_name": "age6_event_6", "description": "Participas en juegos que exigen estrategia.", "rareness": 0.5, "options": [ { "option_name": "Pensamiento táctico", "description": "Planificación simple.", "effect": { "education": 1 } } ] },
+        { "event_name": "age6_event_7", "description": "Un maestro destaca tu curiosidad.", "rareness": 0.4, "options": [ { "option_name": "Mentoría temprana", "description": "Apoyo para aprender más.", "effect": { "education": 1, "charisma": 1 } } ] },
+        { "event_name": "age6_event_8", "description": "Sufres una pequeña pérdida que te vuelve más empático.", "rareness": 0.3, "options": [ { "option_name": "Empatía creciente", "description": "Comprensión del dolor ajeno.", "effect": { "charisma": 1 } } ] },
+        { "event_name": "age6_event_9", "description": "Descubres interés por reparar objetos.", "rareness": 0.45, "options": [ { "option_name": "Manitas aplicado", "description": "Curiosidad técnica.", "effect": { "crafting": 1 } } ] },
+        { "event_name": "age6_event_10", "description": "Un reto físico te hace entrenar fuerza básica.", "rareness": 0.35, "options": [ { "option_name": "Robustez temprana", "description": "Mejor condición física.", "effect": { "strength": 1, "constitution": 1 } } ] },
+        { "event_name": "age6_event_11", "description": "Aprendes normas de higiene y salud.", "rareness": 0.5, "options": [ { "option_name": "Cuidado personal", "description": "Prácticas saludables.", "effect": { "constitution": 1 } } ] },
+        { "event_name": "age6_event_12", "description": "En un proyecto escolar coordinas a otros niños.", "rareness": 0.38, "options": [ { "option_name": "Organizador joven", "description": "Capacidad de liderazgo.", "effect": { "charisma": 1 } } ] },
+        { "event_name": "age6_event_13", "description": "Participas en competiciones amistosas y pruebas.", "rareness": 0.44, "options": [ { "option_name": "Espíritu competitivo", "description": "Deseo de mejorar.", "effect": { "strength": 1 } } ] },
+        { "event_name": "age6_event_14", "description": "Una visita a la ciudad despierta interés por el comercio.", "rareness": 0.29, "options": [ { "option_name": "Mercader en ciernes", "description": "Gusto por el intercambio.", "effect": { "wealth": 1 } } ] },
+        { "event_name": "age6_event_15", "description": "Un accidente menor con herramientas te enseña prudencia.", "rareness": 0.2, "options": [ { "option_name": "Respeto por herramientas", "description": "Precaución en labores manuales.", "effect": { "crafting": -1, "perception": 1 } } ] },
+        { "event_name": "age6_event_16", "description": "Aprendes a identificar hierbas comunes.", "rareness": 0.33, "options": [ { "option_name": "Conocimiento de plantas", "description": "Aplicable a curas simples.", "effect": { "perception": 1 } } ] },
+        { "event_name": "age6_event_17", "description": "Te entrenan en disciplina física básica.", "rareness": 0.36, "options": [ { "option_name": "Entrenamiento rudo", "description": "Fortaleza y resistencia.", "effect": { "constitution": 1, "strength": 1 } } ] },
+        { "event_name": "age6_event_18", "description": "Un encuentro con un comerciante te despierta sentido práctico.", "rareness": 0.28, "options": [ { "option_name": "Pragmatismo incipiente", "description": "Pensamiento pragmático.", "effect": { "wealth": 1 } } ] },
+        { "event_name": "age6_event_19", "description": "Una lección sobre responsabilidad animal te marca.", "rareness": 0.31, "options": [ { "option_name": "Cuidado animal", "description": "Mayor empatía hacia seres vivos.", "effect": { "charisma": 1 } } ] },
+        { "event_name": "age6_event_20", "description": "Aprendes orientación básica en el bosque.", "rareness": 0.27, "options": [ { "option_name": "Navegación temprano", "description": "Habilidad para ubicarse.", "effect": { "perception": 1 } } ] },
+        { "event_name": "age6_event_21", "description": "Participas en trabajos comunitarios y sientes propósito.", "rareness": 0.35, "options": [ { "option_name": "Compromiso social", "description": "Sentido de pertenencia.", "effect": { "charisma": 1 } } ] },
+        { "event_name": "age6_event_22", "description": "Un relato de aventuras te inspira aspiraciones mayores.", "rareness": 0.3, "options": [ { "option_name": "Sueños de grandeza", "description": "Ambición temprana.", "effect": { "luck": 1 } } ] },
+        { "event_name": "age6_event_23", "description": "Te reconocen una aptitud manual que puedes pulir.", "rareness": 0.34, "options": [ { "option_name": "Talento práctico", "description": "Potencial para oficio.", "effect": { "crafting": 1 } } ] },
+        { "event_name": "age6_event_24", "description": "Una lección en grupo te enseña cooperación.", "rareness": 0.4, "options": [ { "option_name": "Trabajo en equipo", "description": "Mejor sinergia con otros.", "effect": { "charisma": 1 } } ] },
+        { "event_name": "age6_event_25", "description": "Un encuentro con la autoridad local te enseña respeto por reglas.", "rareness": 0.22, "options": [ { "option_name": "Aprecio por la ley", "description": "Adaptación a normas.", "effect": { "education": 1 } } ] },
+        { "event_name": "age6_event_26", "description": "Practicas un oficio ligero y te gusta la repetición.", "rareness": 0.26, "options": [ { "option_name": "Dedicación manual", "description": "Mejora por práctica.", "effect": { "crafting": 1 } } ] },
+        { "event_name": "age6_event_27", "description": "Una demostración pública despierta curiosidad científica.", "rareness": 0.15, "options": [ { "option_name": "Interés técnico", "description": "Afinidad por experimentos simples.", "effect": { "education": 1 } } ] },
+        { "event_name": "age6_event_28", "description": "Participas en pequeñas competiciones deportivas.", "rareness": 0.32, "options": [ { "option_name": "Atleta joven", "description": "Habilidad física mejorada.", "effect": { "agility": 1, "strength": 1 } } ] },
+        { "event_name": "age6_event_29", "description": "Aprendes a construir refugios simples.", "rareness": 0.24, "options": [ { "option_name": "Habilidad de supervivencia", "description": "Saber improvisar refugio.", "effect": { "crafting": 1, "constitution": 1 } } ] },
+        { "event_name": "age6_event_30", "description": "Te enseñan a respetar la naturaleza y sus ciclos.", "rareness": 0.3, "options": [ { "option_name": "Conservación temprana", "description": "Cuidado por el entorno.", "effect": { "perception": 1 } } ] }
     ],
-    "age_11_15":[
-        {
-            "event_name":"apprenticeship_offer",
-            "description":"Te proponen ser aprendiz de un oficio (herrero, boticario, relojero, músico...).",
-            "rareness":0.7,
-            "options":[
-                {
-                    "option_name":"Aprendes el oficio con pasión",
-                    "description":"Te conviertes en un aprendiz aplicado, dominas técnicas básicas.",
-                    "effect":{
-                        "crafting":2,
-                        "education":1,
-                        "wealth":1
-                    }
-                },
-                {
-                    "option_name":"Aburrimiento y abandono",
-                    "description":"El oficio no te interesa y lo dejas.",
-                    "effect":{
-                        "crafting":-1,
-                        "charisma":-1
-                    }
-                },
-                {
-                    "option_name":"Te haces aprendiz secreto",
-                    "description":"Aprendes a escondidas técnicas peligrosas o raras.",
-                    "effect":{
-                        "crafting":1,
-                        "stealth":1,
-                        "luck":-1
-                    }
-                }
-            ]
-        },
-        {
-            "event_name":"discover_magic",
-            "description":"Detectas por primera vez una afinidad con lo arcano o lo sobrenatural.",
-            "rareness":0.25,
-            "options":[
-                {
-                    "option_name":"Desarrollas la aptitud",
-                    "description":"Eres capaz de canalizar pequeñas manifestaciones mágicas.",
-                    "effect":{
-                        "magic":2,
-                        "perception":1
-                    }
-                },
-                {
-                    "option_name":"Reprimes el don",
-                    "description":"Temor social o religioso te obliga a ocultarlo.",
-                    "effect":{
-                        "magic":-1,
-                        "stealth":1
-                    }
-                }
-            ]
-        },
-        {
-            "event_name":"bullying",
-            "description":"Sufres hostigamiento o intimidación en la escuela o el barrio.",
-            "rareness":0.5,
-            "options":[
-                {
-                    "option_name":"Aprendes a defenderte",
-                    "description":"Te vuelves más duro y habilidoso en peleas.",
-                    "effect":{
-                        "strength":1,
-                        "agility":1
-                    }
-                },
-                {
-                    "option_name":"Te retraes",
-                    "description":"La experiencia te hace inseguro y reservado.",
-                    "effect":{
-                        "charisma":-2,
-                        "perception":1
-                    }
-                }
-            ]
-        },
-        {
-            "event_name":"first_love",
-            "description":"Experimentas un amor o romance juvenil que te marca emocionalmente.",
-            "rareness":0.6,
-            "options":[
-                {
-                    "option_name":"Relación duradera",
-                    "description":"Aprendes compromiso y apoyo mutuo.",
-                    "effect":{
-                        "charisma":2,
-                        "luck":1
-                    }
-                },
-                {
-                    "option_name":"Corazón roto",
-                    "description":"La pérdida te hace más cínico y reservado.",
-                    "effect":{
-                        "charisma":-1,
-                        "education":1
-                    }
-                }
-            ]
-        }
+    "age_11_15": [
+        { "event_name": "apprenticeship_offer", "description": "Te proponen ser aprendiz de un oficio (herrero, boticario, relojero, músico...).", "rareness": 0.7, "options": [ { "option_name": "Aprendes el oficio con pasión", "description": "Te conviertes en un aprendiz aplicado, dominas técnicas básicas.", "effect": { "crafting": 2, "education": 1, "wealth": 1 } }, { "option_name": "Aburrimiento y abandono", "description": "El oficio no te interesa y lo dejas.", "effect": { "crafting": -1, "charisma": -1 } }, { "option_name": "Te haces aprendiz secreto", "description": "Aprendes a escondidas técnicas peligrosas o raras.", "effect": { "crafting": 1, "stealth": 1, "luck": -1 } } ] },
+        { "event_name": "discover_magic", "description": "Detectas por primera vez una afinidad con lo arcano o lo sobrenatural.", "rareness": 0.25, "options": [ { "option_name": "Desarrollas la aptitud", "description": "Eres capaz de canalizar pequeñas manifestaciones mágicas.", "effect": { "magic": 2, "perception": 1 } }, { "option_name": "Reprimes el don", "description": "Temor social o religioso te obliga a ocultarlo.", "effect": { "magic": -1, "stealth": 1 } } ] },
+        { "event_name": "bullying", "description": "Sufres hostigamiento o intimidación en la escuela o el barrio.", "rareness": 0.5, "options": [ { "option_name": "Aprendes a defenderte", "description": "Te vuelves más duro y habilidoso en peleas.", "effect": { "strength": 1, "agility": 1 } }, { "option_name": "Te retraes", "description": "La experiencia te hace inseguro y reservado.", "effect": { "charisma": -2, "perception": 1 } } ] },
+        { "event_name": "first_love", "description": "Experimentas un amor o romance juvenil que te marca emocionalmente.", "rareness": 0.6, "options": [ { "option_name": "Relación duradera", "description": "Aprendes compromiso y apoyo mutuo.", "effect": { "charisma": 2, "luck": 1 } }, { "option_name": "Corazón roto", "description": "La pérdida te hace más cínico y reservado.", "effect": { "charisma": -1, "education": 1 } } ] },
+        { "event_name": "age11_event_5", "description": "Participas en debates o discusiones formales.", "rareness": 0.48, "options": [ { "option_name": "Voz persuasiva", "description": "Habilidad para argumentar.", "effect": { "charisma": 1, "education": 1 } } ] },
+        { "event_name": "age11_event_6", "description": "Un profesor reconoce tu esfuerzo y te apoya.", "rareness": 0.4, "options": [ { "option_name": "Apoyo académico", "description": "Acceso a recursos de aprendizaje.", "effect": { "education": 1 } } ] },
+        { "event_name": "age11_event_7", "description": "Aprendes trabajo en equipo en proyectos mayores.", "rareness": 0.5, "options": [ { "option_name": "Trabajo cooperativo", "description": "Sinergia con pares.", "effect": { "charisma": 1 } } ] },
+        { "event_name": "age11_event_8", "description": "Participas en entrenamiento físico serio.", "rareness": 0.3, "options": [ { "option_name": "Fortaleza incrementada", "description": "Aumento de capacidades físicas.", "effect": { "strength": 1, "constitution": 1 } } ] },
+        { "event_name": "age11_event_9", "description": "Aprendes oficios y tareas prácticas más complejas.", "rareness": 0.42, "options": [ { "option_name": "Oficio sólido", "description": "Competencia técnica inicial.", "effect": { "crafting": 1 } } ] },
+        { "event_name": "age11_event_10", "description": "Descubres lecturas que amplían tu mundo.", "rareness": 0.36, "options": [ { "option_name": "Lecturas formativas", "description": "Madurez intelectual.", "effect": { "education": 1 } } ] },
+        { "event_name": "age11_event_11", "description": "Un mentor te enseña ética o filosofía.", "rareness": 0.2, "options": [ { "option_name": "Guía moral", "description": "Reflexión sobre decisiones.", "effect": { "education": 1 } } ] },
+        { "event_name": "age11_event_12", "description": "Realizas una tarea que te da reconocimiento público.", "rareness": 0.28, "options": [ { "option_name": "Fama local", "description": "Elogios y oportunidades.", "effect": { "charisma": 1, "luck": 1 } } ] },
+        { "event_name": "age11_event_13", "description": "Experimentas una injusticia que despierta indignación.", "rareness": 0.22, "options": [ { "option_name": "Sentido de justicia", "description": "Compromiso social.", "effect": { "charisma": 1 } } ] },
+        { "event_name": "age11_event_14", "description": "Te forman en manejo básico de herramientas peligrosas.", "rareness": 0.18, "options": [ { "option_name": "Precaución técnica", "description": "Competencia y respeto por riesgos.", "effect": { "crafting": 1, "perception": 1 } } ] },
+        { "event_name": "age11_event_15", "description": "Un viaje corto al exterior amplía tu perspectiva.", "rareness": 0.24, "options": [ { "option_name": "Mirada amplia", "description": "Curiosidad por otros lugares.", "effect": { "education": 1, "luck": 1 } } ] },
+        { "event_name": "age11_event_16", "description": "Aprendes a mediar disputas menores en tu comunidad.", "rareness": 0.3, "options": [ { "option_name": "Mediador juvenil", "description": "Habilidad social para resolver conflictos.", "effect": { "charisma": 1 } } ] },
+        { "event_name": "age11_event_17", "description": "Te asignan responsabilidades que implican coordinación.", "rareness": 0.26, "options": [ { "option_name": "Coordinación madura", "description": "Gestión básica de tareas.", "effect": { "education": 1 } } ] },
+        { "event_name": "age11_event_18", "description": "Experimentas primeras pruebas de habilidad intelectual.", "rareness": 0.34, "options": [ { "option_name": "Resolutividad", "description": "Mejora en resolver problemas.", "effect": { "education": 1 } } ] },
+        { "event_name": "age11_event_19", "description": "Un encuentro con arte te inspira sensibilidad estética.", "rareness": 0.29, "options": [ { "option_name": "Sensibilidad artística", "description": "Apreciación por la belleza.", "effect": { "charisma": 1 } } ] },
+        { "event_name": "age11_event_20", "description": "Practicas debates y mejora tu elocuencia.", "rareness": 0.27, "options": [ { "option_name": "Elocuencia incipiente", "description": "Habilidad verbal creciente.", "effect": { "charisma": 1 } } ] },
+        { "event_name": "age11_event_21", "description": "Encuentras una pieza mecánica rota y aprendes a arreglarla.", "rareness": 0.31, "options": [ { "option_name": "Reparador novato", "description": "Habilidad práctica útil.", "effect": { "crafting": 1 } } ] },
+        { "event_name": "age11_event_22", "description": "Participas en una obra comunitaria y sientes gratitud.", "rareness": 0.33, "options": [ { "option_name": "Servicio comunitario", "description": "Senso de propósito.", "effect": { "charisma": 1 } } ] },
+        { "event_name": "age11_event_23", "description": "Vives una decepción que te hace más cauto.", "rareness": 0.2, "options": [ { "option_name": "Cautela emocional", "description": "Protección ante expectativas.", "effect": { "charisma": -1 } } ] },
+        { "event_name": "age11_event_24", "description": "Tus manos aprenden a trabajar finamente con detalles.", "rareness": 0.35, "options": [ { "option_name": "Destreza manual", "description": "Mejor precisión.", "effect": { "crafting": 1 } } ] },
+        { "event_name": "age11_event_25", "description": "Te enfrentas a un dilema moral y tomas una decisión clara.", "rareness": 0.18, "options": [ { "option_name": "Convicción formada", "description": "Firmeza en valores.", "effect": { "charisma": 1 } } ] },
+        { "event_name": "age11_event_26", "description": "Un mentor te enseña un oficio secreto básico.", "rareness": 0.14, "options": [ { "option_name": "Técnica oculta", "description": "Pequeños trucos aprendidos.", "effect": { "crafting": 1, "stealth": 1 } } ] },
+        { "event_name": "age11_event_27", "description": "Realizas una acción valiente que te da respeto local.", "rareness": 0.16, "options": [ { "option_name": "Respeto ganado", "description": "Reconocimiento por coraje.", "effect": { "charisma": 1, "luck": 1 } } ] },
+        { "event_name": "age11_event_28", "description": "Aprendes técnicas de observación avanzada.", "rareness": 0.25, "options": [ { "option_name": "Ojo agudo", "description": "Percepción afinada.", "effect": { "perception": 1 } } ] },
+        { "event_name": "age11_event_29", "description": "Una experiencia de pérdida te hace resiliente.", "rareness": 0.2, "options": [ { "option_name": "Resistencia emocional", "description": "Capacidad para recuperarse.", "effect": { "constitution": 1 } } ] },
+        { "event_name": "age11_event_30", "description": "Te asignan una tarea que requiere paciencia extrema.", "rareness": 0.22, "options": [ { "option_name": "Paciencia cultivada", "description": "Mayor control sobre frustraciones.", "effect": { "charisma": 1, "education": 1 } } ] }
     ],
-    "age_16_20":[
-        {
-            "event_name":"guild_initiation",
-            "description":"Te ofrecen un lugar en un gremio o clan profesional (mercaderes, artesanos, ladrones, etc.).",
-            "rareness":0.6,
-            "options":[
-                {
-                    "option_name":"Te unes formalmente",
-                    "description":"Obtienes entrenamiento, contactos y recursos del gremio.",
-                    "effect":{
-                        "crafting":2,
-                        "wealth":1,
-                        "education":1
-                    }
-                },
-                {
-                    "option_name":"Rechazas la atadura",
-                    "description":"Prefieres libertad a cambio de menos seguridad económica.",
-                    "effect":{
-                        "stealth":1,
-                        "luck":1,
-                        "wealth":-1
-                    }
-                }
-            ]
-        },
-        {
-            "event_name":"war_recruitment",
-            "description":"Conflicto local o conscripción te arrastra al servicio militar por un tiempo.",
-            "rareness":0.3,
-            "options":[
-                {
-                    "option_name":"Emerges como soldado competente",
-                    "description":"Entrenamiento y batalla te endurecen y enseñan liderazgo.",
-                    "effect":{
-                        "strength":2,
-                        "constitution":1,
-                        "charisma":1
-                    }
-                },
-                {
-                    "option_name":"Vives el horror y lo evitas",
-                    "description":"La guerra te traumatiza, buscas paz y evitas conflictos.",
-                    "effect":{
-                        "constitution":-1,
-                        "perception":2
-                    }
-                }
-            ]
-        },
-        {
-            "event_name":"noble_patron",
-            "description":"Un noble o patrón te apadrina: te financia estudios o te encomienda tareas.",
-            "rareness":0.35,
-            "options":[
-                {
-                    "option_name":"Aceptas y te formas",
-                    "description":"Acceso a educación y misiónes que mejoran tus oportunidades.",
-                    "effect":{
-                        "education":2,
-                        "charisma":1,
-                        "wealth":1
-                    }
-                },
-                {
-                    "option_name":"El patrón exige lealtad costosa",
-                    "description":"Te obliga a favores que empañan tu reputación.",
-                    "effect":{
-                        "charisma":-1,
-                        "luck":-1,
-                        "wealth":2
-                    }
-                }
-            ]
-        },
-        {
-            "event_name":"crime_youth",
-            "description":"Caes en actividades ilícitas (robo menor, contrabando) para sobrevivir o por rebelión.",
-            "rareness":0.4,
-            "options":[
-                {
-                    "option_name":"Te especializas y prosperas",
-                    "description":"Habilidad en engaño y movimientos sigilosos.",
-                    "effect":{
-                        "stealth":2,
-                        "perception":1,
-                        "wealth":1
-                    }
-                },
-                {
-                    "option_name":"Capturado y marcado",
-                    "description":"Condena o estigma social que limita oportunidades legales.",
-                    "effect":{
-                        "charisma":-2,
-                        "luck":-1
-                    }
-                }
-            ]
-        }
+    "age_16_20": [
+        { "event_name": "guild_initiation", "description": "Te ofrecen un lugar en un gremio o clan profesional (mercaderes, artesanos, ladrones, etc.).", "rareness": 0.6, "options": [ { "option_name": "Te unes formalmente", "description": "Obtienes entrenamiento, contactos y recursos del gremio.", "effect": { "crafting": 2, "wealth": 1, "education": 1 } }, { "option_name": "Rechazas la atadura", "description": "Prefieres libertad a cambio de menos seguridad económica.", "effect": { "stealth": 1, "luck": 1, "wealth": -1 } } ] },
+        { "event_name": "war_recruitment", "description": "Conflicto local o conscripción te arrastra al servicio militar por un tiempo.", "rareness": 0.3, "options": [ { "option_name": "Emerges como soldado competente", "description": "Entrenamiento y batalla te endurecen y enseñan liderazgo.", "effect": { "strength": 2, "constitution": 1, "charisma": 1 } }, { "option_name": "Vives el horror y lo evitas", "description": "La guerra te traumatiza, buscas paz y evitas conflictos.", "effect": { "constitution": -1, "perception": 2 } } ] },
+        { "event_name": "noble_patron", "description": "Un noble o patrón te apadrina: te financia estudios o te encomienda tareas.", "rareness": 0.35, "options": [ { "option_name": "Aceptas y te formas", "description": "Acceso a educación y misiónes que mejoran tus oportunidades.", "effect": { "education": 2, "charisma": 1, "wealth": 1 } }, { "option_name": "El patrón exige lealtad costosa", "description": "Te obliga a favores que empañan tu reputación.", "effect": { "charisma": -1, "luck": -1, "wealth": 2 } } ] },
+        { "event_name": "crime_youth", "description": "Caes en actividades ilícitas (robo menor, contrabando) para sobrevivir o por rebelión.", "rareness": 0.4, "options": [ { "option_name": "Te especializas y prosperas", "description": "Habilidad en engaño y movimientos sigilosos.", "effect": { "stealth": 2, "perception": 1, "wealth": 1 } }, { "option_name": "Capturado y marcado", "description": "Condena o estigma social que limita oportunidades legales.", "effect": { "charisma": -2, "luck": -1 } } ] },
+        { "event_name": "age16_event_5", "description": "Te ofrecen liderar un pequeño equipo en una tarea importante.", "rareness": 0.45, "options": [ { "option_name": "Aceptas liderazgo", "description": "Ganas experiencia en gestión.", "effect": { "charisma": 1, "education": 1 } } ] },
+        { "event_name": "age16_event_6", "description": "Una relación profesional te da contactos valiosos.", "rareness": 0.39, "options": [ { "option_name": "Red creciente", "description": "Acceso a oportunidades.", "effect": { "wealth": 1, "charisma": 1 } } ] },
+        { "event_name": "age16_event_7", "description": "Te enseñan tácticas avanzadas de oficios.", "rareness": 0.32, "options": [ { "option_name": "Maestría incipiente", "description": "Mayor destreza técnica.", "effect": { "crafting": 1 } } ] },
+        { "event_name": "age16_event_8", "description": "Participas en una aventura peligrosa y sobrevives.", "rareness": 0.2, "options": [ { "option_name": "Superviviente", "description": "Resiliencia y experiencia práctica.", "effect": { "constitution": 1, "luck": 1 } } ] },
+        { "event_name": "age16_event_9", "description": "Un escándalo te obliga a limpiar tu nombre.", "rareness": 0.18, "options": [ { "option_name": "Reputación restaurada", "description": "Cuidado con la imagen pública.", "effect": { "charisma": 1 } } ] },
+        { "event_name": "age16_event_10", "description": "Aprendes comercio avanzado y negociación.", "rareness": 0.34, "options": [ { "option_name": "Trato hábil", "description": "Mejoras en trueques.", "effect": { "wealth": 1, "education": 1 } } ] },
+        { "event_name": "age16_event_11", "description": "Un maestro te enseña un secreto del oficio.", "rareness": 0.14, "options": [ { "option_name": "Técnica privilegiada", "description": "Ventaja competitiva.", "effect": { "crafting": 1, "luck": -1 } } ] },
+        { "event_name": "age16_event_12", "description": "Te envían a misiones pequeñas que templen tu carácter.", "rareness": 0.25, "options": [ { "option_name": "Templado en ruta", "description": "Mayor autocontrol.", "effect": { "constitution": 1, "charisma": 1 } } ] },
+        { "event_name": "age16_event_13", "description": "Una oportunidad académica te plantea decisiones difíciles.", "rareness": 0.2, "options": [ { "option_name": "Estudio elegido", "description": "Invertir en formación.", "effect": { "education": 1 } } ] },
+        { "event_name": "age16_event_14", "description": "Te enseñan tácticas de sigilo y movimiento.", "rareness": 0.3, "options": [ { "option_name": "Sigilo aprendido", "description": "Movilidad y discreción.", "effect": { "stealth": 1, "agility": 1 } } ] },
+        { "event_name": "age16_event_15", "description": "Una prueba de carácter te hace elegir entre seguridad y libertad.", "rareness": 0.22, "options": [ { "option_name": "Escoges libertad", "description": "Camino menos seguro pero propio.", "effect": { "luck": 1, "wealth": -1 } } ] },
+        { "event_name": "age16_event_16", "description": "Participas en una expedición que te enseña logística.", "rareness": 0.15, "options": [ { "option_name": "Organizador práctico", "description": "Planificación aplicada.", "effect": { "education": 1 } } ] },
+        { "event_name": "age16_event_17", "description": "Un mentor te enseña gestión de recursos.", "rareness": 0.28, "options": [ { "option_name": "Administrador joven", "description": "Control de suministros.", "effect": { "wealth": 1 } } ] },
+        { "event_name": "age16_event_18", "description": "Aprendes técnicas avanzadas de defensa personal.", "rareness": 0.24, "options": [ { "option_name": "Defensa capaz", "description": "Mayor seguridad personal.", "effect": { "strength": 1, "agility": 1 } } ] },
+        { "event_name": "age16_event_19", "description": "Una oportunidad de inversión cambia tu relación con el dinero.", "rareness": 0.2, "options": [ { "option_name": "Inversión prudente", "description": "Beneficios futuros.", "effect": { "wealth": 1 } } ] },
+        { "event_name": "age16_event_20", "description": "Participas en política local y entiendes juegos de poder.", "rareness": 0.18, "options": [ { "option_name": "Poder político", "description": "Habilidad para manejar influencias.", "effect": { "charisma": 1 } } ] },
+        { "event_name": "age16_event_21", "description": "Un fracaso te enseña humildad y mejora.", "rareness": 0.16, "options": [ { "option_name": "Lección dura", "description": "Crecimiento personal.", "effect": { "education": 1 } } ] },
+        { "event_name": "age16_event_22", "description": "Te entrenan en tácticas de escape y evasión.", "rareness": 0.21, "options": [ { "option_name": "Escape experto", "description": "Movilidad y discreción.", "effect": { "stealth": 1, "agility": 1 } } ] },
+        { "event_name": "age16_event_23", "description": "Un encuentro con la ley te obliga a tomar decisiones morales.", "rareness": 0.12, "options": [ { "option_name": "Justicia personal", "description": "Mayor sentido ético.", "effect": { "charisma": 1 } } ] },
+        { "event_name": "age16_event_24", "description": "Aprendes a liderar personalmente tras un reto.", "rareness": 0.19, "options": [ { "option_name": "Líder emergente", "description": "Capacidad de mando.", "effect": { "charisma": 1 } } ] },
+        { "event_name": "age16_event_25", "description": "Encuentras un libro que cambia tu forma de pensar.", "rareness": 0.14, "options": [ { "option_name": "Pensamiento crítico", "description": "Nueva perspectiva intelectual.", "effect": { "education": 1 } } ] },
+        { "event_name": "age16_event_26", "description": "Un proyecto te exige disciplina y perseverancia.", "rareness": 0.2, "options": [ { "option_name": "Perseverancia forjada", "description": "Determinación prolongada.", "effect": { "constitution": 1 } } ] },
+        { "event_name": "age16_event_27", "description": "Te entrenan en negociar bajo presión.", "rareness": 0.17, "options": [ { "option_name": "Negociador joven", "description": "Habilidad para tratos complejos.", "effect": { "charisma": 1, "wealth": 1 } } ] },
+        { "event_name": "age16_event_28", "description": "Una experiencia artística intensa te cambia la sensibilidad.", "rareness": 0.13, "options": [ { "option_name": "Sensibilidad elevada", "description": "Afinidad por expresión creativa.", "effect": { "charisma": 1 } } ] },
+        { "event_name": "age16_event_29", "description": "Aprendes a construir máquinas simples con vapor.", "rareness": 0.2, "options": [ { "option_name": "Ingenio steam", "description": "Conocimientos técnicos básicos steampunk.", "effect": { "crafting": 1, "education": 1 } } ] },
+        { "event_name": "age16_event_30", "description": "Una decisión de lealtad te define como persona.", "rareness": 0.15, "options": [ { "option_name": "Fidelidad elegida", "description": "Construcción de relaciones duraderas.", "effect": { "charisma": 1 } } ] }
     ],
-    "special_events":[
-        {
-            "event_name":"marked_by_fae",
-            "description":"Un encuentro con lo sobrenatural te deja una marca o favor que altera tu destino.",
-            "rareness":0.1,
-            "options":[
-                {
-                    "option_name":"Bendición leve",
-                    "description":"Pequeñas ventajas extrañas: intuiciones o suerte ocasional.",
-                    "effect":{
-                        "luck":2,
-                        "perception":1
-                    }
-                },
-                {
-                    "option_name":"Maldición sutil",
-                    "description":"Problemas extraños aparecien en tu vida; ventajas agridulces.",
-                    "effect":{
-                        "magic":1,
-                        "charisma":-1,
-                        "luck":-1
-                    }
-                }
-            ]
-        },
-        {
-            "event_name":"experimental_device_incident",
-            "description":"Un accidente con tecnología steampunk (vapor, autómatas, artilugios) deja consecuencias físicas o conocimientos.",
-            "rareness":0.15,
-            "options":[
-                {
-                    "option_name":"Aprendes ingeniería práctica",
-                    "description":"Comprendes mecanismos y te vuelves manitas con cacharros.",
-                    "effect":{
-                        "crafting":2,
-                        "education":1
-                    }
-                },
-                {
-                    "option_name":"Secuela mecánica",
-                    "description":"Te quedas con una lesión o implante que cambia tus capacidades.",
-                    "effect":{
-                        "agility":-1,
-                        "strength":1,
-                        "luck":-1
-                    }
-                }
-            ]
-        },
-        {
-            "event_name":"secret_parentage",
-            "description":"Descubres que no eres hijo/a de quien creías; la verdad tiene implicaciones sociales.",
-            "rareness":0.2,
-            "options":[
-                {
-                    "option_name":"Herencia escondida",
-                    "description":"Revelación de linaje que trae recursos y obligaciones.",
-                    "effect":{
-                        "wealth":2,
-                        "charisma":1
-                    }
-                },
-                {
-                    "option_name":"Rechazo y misterio",
-                    "description":"La incertidumbre te hace desconfiado y curioso por tu pasado.",
-                    "effect":{
-                        "perception":2,
-                        "charisma":-1
-                    }
-                }
-            ]
-        }
+    "special_events": [
+        { "event_name": "marked_by_fae", "description": "Un encuentro con lo sobrenatural te deja una marca o favor que altera tu destino.", "rareness": 0.1, "options": [ { "option_name": "Bendición leve", "description": "Pequeñas ventajas extrañas: intuiciones o suerte ocasional.", "effect": { "luck": 2, "perception": 1 } }, { "option_name": "Maldición sutil", "description": "Problemas extraños aparecien en tu vida; ventajas agridulces.", "effect": { "magic": 1, "charisma": -1, "luck": -1 } } ] },
+        { "event_name": "experimental_device_incident", "description": "Un accidente con tecnología steampunk (vapor, autómatas, artilugios) deja consecuencias físicas o conocimientos.", "rareness": 0.15, "options": [ { "option_name": "Aprendes ingeniería práctica", "description": "Comprendes mecanismos y te vuelves manitas con cacharros.", "effect": { "crafting": 2, "education": 1 } }, { "option_name": "Secuela mecánica", "description": "Te quedas con una lesión o implante que cambia tus capacidades.", "effect": { "agility": -1, "strength": 1, "luck": -1 } } ] },
+        { "event_name": "secret_parentage", "description": "Descubres que no eres hijo/a de quien creías; la verdad tiene implicaciones sociales.", "rareness": 0.2, "options": [ { "option_name": "Herencia escondida", "description": "Revelación de linaje que trae recursos y obligaciones.", "effect": { "wealth": 2, "charisma": 1 } }, { "option_name": "Rechazo y misterio", "description": "La incertidumbre te hace desconfiado y curioso por tu pasado.", "effect": { "perception": 2, "charisma": -1 } } ] },
+        { "event_name": "special_event_4", "description": "Encuentro con mercaderes exóticos que te dejan un recuerdo.", "rareness": 0.3, "options": [ { "option_name": "Relación comercial", "description": "Ganas contactos y curiosidad.", "effect": { "wealth": 1, "education": 1 } } ] },
+        { "event_name": "special_event_5", "description": "Una visión profética te inquieta y abre preguntas.", "rareness": 0.08, "options": [ { "option_name": "Preocupación mística", "description": "Te interesa lo inexplicable.", "effect": { "magic": 1, "perception": 1 } } ] },
+        { "event_name": "special_event_6", "description": "Te encuentras con una sociedad secreta en la penumbra.", "rareness": 0.12, "options": [ { "option_name": "Contacto clandestino", "description": "Puertas a saberes ocultos.", "effect": { "stealth": 1, "luck": -1 } } ] },
+        { "event_name": "special_event_7", "description": "Una extraña melodía te marca y la recuerdas siempre.", "rareness": 0.2, "options": [ { "option_name": "Eco musical", "description": "Conexión emocional duradera.", "effect": { "charisma": 1 } } ] },
+        { "event_name": "special_event_8", "description": "Un anciano te entrega un mapa incompleto.", "rareness": 0.18, "options": [ { "option_name": "Curiosidad por lo desconocido", "description": "Deseo por completar el misterio.", "effect": { "perception": 1, "luck": 1 } } ] },
+        { "event_name": "special_event_9", "description": "Una reliquia vibrante te da una habilidad ocasional.", "rareness": 0.09, "options": [ { "option_name": "Don efímero", "description": "Ventaja puntual inusual.", "effect": { "magic": 1, "luck": 1 } } ] },
+        { "event_name": "special_event_10", "description": "Te marcan como testigo de un suceso importante.", "rareness": 0.14, "options": [ { "option_name": "Memoria clave", "description": "Acceso a información valiosa.", "effect": { "education": 1, "perception": 1 } } ] },
+        { "event_name": "special_event_11", "description": "Un viajero te enseña frases en un idioma extranjero.", "rareness": 0.22, "options": [ { "option_name": "Lenguaje básico", "description": "Capacidad de comunicación ampliada.", "effect": { "education": 1 } } ] },
+        { "event_name": "special_event_12", "description": "Un robo menor te involucra y aprendes a escapar.", "rareness": 0.2, "options": [ { "option_name": "Evasión astuta", "description": "Habilidad de escape.", "effect": { "stealth": 1 } } ] },
+        { "event_name": "special_event_13", "description": "Una bendición inesperada te ayuda en un momento crítico.", "rareness": 0.13, "options": [ { "option_name": "Suerte pasajera", "description": "Ventaja temporal.", "effect": { "luck": 1 } } ] },
+        { "event_name": "special_event_14", "description": "Encuentras un pergamino con símbolos incomprensibles.", "rareness": 0.11, "options": [ { "option_name": "Interés arcano", "description": "Curiosidad por lo oculto.", "effect": { "magic": 1, "education": 1 } } ] },
+        { "event_name": "special_event_15", "description": "Una noche de tormenta revela una visión en el refugio.", "rareness": 0.09, "options": [ { "option_name": "Visión inquietante", "description": "Cambio de prioridades.", "effect": { "perception": 1 } } ] },
+        { "event_name": "special_event_16", "description": "Un invento pequeño te fascina y lo desarmas.", "rareness": 0.17, "options": [ { "option_name": "Manos curiosas", "description": "Gusto por entender mecanismos.", "effect": { "crafting": 1 } } ] },
+        { "event_name": "special_event_17", "description": "Un ritual menor te otorga simbolismo cultural.", "rareness": 0.12, "options": [ { "option_name": "Participación ritual", "description": "Conexión con tradiciones.", "effect": { "charisma": 1 } } ] },
+        { "event_name": "special_event_18", "description": "Un extraño favor te complica la vida posteriormente.", "rareness": 0.08, "options": [ { "option_name": "Favor con precio", "description": "Ventaja con consecuencias.", "effect": { "wealth": 1, "luck": -1 } } ] },
+        { "event_name": "special_event_19", "description": "Descubres un refugio secreto y su contenido.", "rareness": 0.2, "options": [ { "option_name": "Tesoro escondido", "description": "Pequeño beneficio material.", "effect": { "wealth": 1 } } ] },
+        { "event_name": "special_event_20", "description": "Un encuentro con un artista cambia tu percepción estética.", "rareness": 0.15, "options": [ { "option_name": "Ojo artístico", "description": "Sensibilidad y gusto.", "effect": { "charisma": 1 } } ] },
+        { "event_name": "special_event_21", "description": "Participas en un experimento que falla pero enseña.", "rareness": 0.09, "options": [ { "option_name": "Aprendizaje por error", "description": "Conocimiento adquirido por prueba.", "effect": { "education": 1 } } ] },
+        { "event_name": "special_event_22", "description": "Una carta perdida cambia tu destino a corto plazo.", "rareness": 0.11, "options": [ { "option_name": "Mensaje revelador", "description": "Información transformadora.", "effect": { "perception": 1 } } ] },
+        { "event_name": "special_event_23", "description": "Un azar fortuito te hace conocido por un día.", "rareness": 0.13, "options": [ { "option_name": "Fama efímera", "description": "Oportunidades pasajeras.", "effect": { "luck": 1 } } ] },
+        { "event_name": "special_event_24", "description": "Te ofrecen pagar por un favor; aprendes valor monetario.", "rareness": 0.16, "options": [ { "option_name": "Trabajo recompensado", "description": "Conexión entre esfuerzo y beneficio.", "effect": { "wealth": 1 } } ] },
+        { "event_name": "special_event_25", "description": "Un fugitivo te pide ayuda y te marca moralmente.", "rareness": 0.07, "options": [ { "option_name": "Compasión arriesgada", "description": "Decisión con riesgo ético.", "effect": { "charisma": 1, "luck": -1 } } ] },
+        { "event_name": "special_event_26", "description": "Un encuentro con un sabio te deja una frase para la vida.", "rareness": 0.14, "options": [ { "option_name": "Frase guía", "description": "Mensaje que perdura.", "effect": { "education": 1 } } ] },
+        { "event_name": "special_event_27", "description": "Una reliquia mecánica te enseña principios simples de engranajes.", "rareness": 0.12, "options": [ { "option_name": "Ingeniería básica", "description": "Curiosidad técnica aumentada.", "effect": { "crafting": 1 } } ] },
+        { "event_name": "special_event_28", "description": "Una noche de historias sobre héroes te inspira acción futura.", "rareness": 0.2, "options": [ { "option_name": "Inspiración heroica", "description": "Deseo de emular ideales.", "effect": { "charisma": 1, "strength": 1 } } ] },
+        { "event_name": "special_event_29", "description": "Encuentras una pluma exótica que guardas como talismán.", "rareness": 0.18, "options": [ { "option_name": "Talismán sencillo", "description": "Pequeña mejora de confianza.", "effect": { "luck": 1 } } ] },
+        { "event_name": "special_event_30", "description": "Un acto de valentía casual te da aliados inesperados.", "rareness": 0.1, "options": [ { "option_name": "Aliados ganados", "description": "Soporte social futuro.", "effect": { "charisma": 1 } } ] }
     ]
 }

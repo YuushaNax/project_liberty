@@ -39,6 +39,7 @@
         "skills_modifiers": [],
         "normal_max_life_span": 60.0,
         "maturity": 12.0,
+        "min_height": 170.30,
         "max_height": 213.36
     },
     {
