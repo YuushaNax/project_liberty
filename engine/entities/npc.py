@@ -3,6 +3,7 @@ import json
 import random
 from pathlib import Path
 from engine.entities.entity import Entity
+from engine.utils.name_generator import NameGenerator
 
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 DATA = BASE_DIR / "data"
@@ -16,15 +17,16 @@ class NPC(Entity):
     Los rasgos de personalidad se asignan según la profesión y sus sinergia.
     """
 
-    def __init__(self, name, profession_name, race_name="human", height=None):
+    def __init__(self, name=None, profession_name=None, race_name="human", height=None, auto_generate_name=True):
         """
         Inicializa un NPC basado en una profesión.
         
         Args:
-            name: Nombre del NPC
+            name: Nombre del NPC (si es None y auto_generate_name=True, se genera automáticamente)
             profession_name: Nombre de la profesión (ej: "warrior", "mage")
             race_name: Nombre de la raza (default: "human")
             height: Altura (opcional, se genera aleatoriamente si no se proporciona)
+            auto_generate_name: Si True, genera un nombre automático si no se proporciona (default: True)
         """
         # Cargar datos
         with open(DATA / "professions.json", encoding="utf-8") as f:
@@ -38,6 +40,10 @@ class NPC(Entity):
         
         with open(DATA / "personality_traits.json", encoding="utf-8") as f:
             personality_data = json.load(f)
+        
+        # Validar profession_name
+        if not profession_name:
+            raise ValueError("profession_name es requerido")
         
         # Encontrar profesión
         profession = next(
@@ -54,6 +60,13 @@ class NPC(Entity):
         )
         if not race:
             raise ValueError(f"Raza '{race_name}' no encontrada")
+        
+        # Generar nombre automáticamente si no se proporciona
+        if name is None and auto_generate_name:
+            name_gen = NameGenerator()
+            name = name_gen.generate_name(race=race_name)
+        elif name is None:
+            raise ValueError("name es requerido cuando auto_generate_name=False")
         
         # Generar stats dentro de los rangos de la profesión
         stats = self._generate_profession_stats(profession, stats_data)
@@ -90,10 +103,8 @@ class NPC(Entity):
         self.profession = profession_name
         self.profession_display = profession.get("display", profession_name)
         self.profession_description = profession.get("description", "")
-        
-        # Asignar habilidades
-        self.primary_skills = profession.get("primary_skills", [])
-        self.secondary_skills = profession.get("secondary_skills", [])
+        self.profession_title = profession.get("title", f"el {self.profession_display}")
+        self.profession_category = profession.get("category", "combat")
         
         # Generar personalidad
         self.personality = self._generate_personality(
@@ -374,3 +385,31 @@ class NPC(Entity):
             f"NPC(name={self.name}, profession={self.profession_display}, "
             f"race={self.race}, level={self.level})"
         )
+    
+    def get_full_title(self, include_race=False):
+        """
+        Obtiene el nombre completo del NPC con su título de oficio.
+        
+        Args:
+            include_race: Si True, incluye la raza (ej: "Kah'zur el Sastre (Humano)")
+        
+        Returns:
+            String con formato "{name} {profession_title}" o "{name} {profession_title} ({race})"
+        """
+        full_title = f"{self.name} {self.profession_title}"
+        
+        if include_race:
+            race_name = next(iter(self.race.keys()), "Unknown")
+            full_title += f" ({race_name.capitalize()})"
+        
+        return full_title
+    
+    def get_reference_by_profession(self):
+        """
+        Obtiene la referencia del NPC solo por su profesión y nombre.
+        Útil para que otros NPCs se refieran a este NPC.
+        
+        Returns:
+            String con formato "{name} el/la {profession_display}"
+        """
+        return f"{self.name} {self.profession_title}"

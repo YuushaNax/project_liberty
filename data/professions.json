@@ -1,9 +1,10 @@
-
 [
     {
         "profession_name": "warrior",
         "display": "Guerrero",
+        "title": "el Guerrero",
         "description": "Luchador experto en combate cuerpo a cuerpo.",
+        "category": "combat",
         "personality_traits": ["brave", "aggressive", "honor_bound", "impulsive"],
         "stat_ranges": {
             "strength": {"min": 16, "max": 20},
@@ -19,7 +20,9 @@
     {
         "profession_name": "rogue",
         "display": "Pícaro",
+        "title": "el Pícaro",
         "description": "Maestro del sigilo, acrobacias y mañas.",
+        "category": "combat",
         "personality_traits": ["cunning", "impulsive", "manipulative", "curious"],
         "stat_ranges": {
             "strength": {"min": 12, "max": 15},
@@ -35,7 +38,9 @@
     {
         "profession_name": "mage",
         "display": "Mago",
+        "title": "el Mago",
         "description": "Practicante de las artes arcanas.",
+        "category": "combat",
         "personality_traits": ["curious", "meticulous", "patient", "secretive"],
         "stat_ranges": {
             "strength": {"min": 10, "max": 13},
@@ -51,7 +56,9 @@
     {
         "profession_name": "paladin",
         "display": "Paladín",
+        "title": "el Paladín",
         "description": "Guerrero sagrado con devoción religiosa.",
+        "category": "combat",
         "personality_traits": ["honor_bound", "brave", "loyal", "compassionate"],
         "stat_ranges": {
             "strength": {"min": 15, "max": 19},
@@ -67,7 +74,9 @@
     {
         "profession_name": "cleric",
         "display": "Clérigo",
+        "title": "el Clérigo",
         "description": "Sanador y canalizador de poder divino.",
+        "category": "combat",
         "personality_traits": ["compassionate", "altruistic", "patient", "diplomatic"],
         "stat_ranges": {
             "strength": {"min": 11, "max": 14},
@@ -83,7 +92,9 @@
     {
         "profession_name": "archer",
         "display": "Arquero",
+        "title": "el Arquero",
         "description": "Experto en ataque a distancia.",
+        "category": "combat",
         "personality_traits": ["patient", "meticulous", "cautious", "curious"],
         "stat_ranges": {
             "strength": {"min": 14, "max": 17},
@@ -99,7 +110,9 @@
     {
         "profession_name": "merchant",
         "display": "Mercader",
+        "title": "el Mercader",
         "description": "Comerciante astuto y negociador.",
+        "category": "civilian",
         "personality_traits": ["charming", "greedy", "manipulative", "talkative"],
         "stat_ranges": {
             "strength": {"min": 10, "max": 13},
@@ -115,7 +128,9 @@
     {
         "profession_name": "assassin",
         "display": "Asesino",
+        "title": "el Asesino",
         "description": "Silencioso exterminador.",
+        "category": "combat",
         "personality_traits": ["ruthless", "secretive", "manipulative", "cautious"],
         "stat_ranges": {
             "strength": {"min": 14, "max": 17},
@@ -131,7 +146,9 @@
     {
         "profession_name": "bard",
         "display": "Bardo",
+        "title": "el Bardo",
         "description": "Artista talentoso y titiritero.",
+        "category": "combat",
         "personality_traits": ["charming", "witty", "talkative", "adventurous"],
         "stat_ranges": {
             "strength": {"min": 11, "max": 14},
@@ -147,7 +164,9 @@
     {
         "profession_name": "ranger",
         "display": "Guardabosque",
+        "title": "el Guardabosque",
         "description": "Cazador y protector de la naturaleza.",
+        "category": "combat",
         "personality_traits": ["adventurous", "patient", "independent", "cautious"],
         "stat_ranges": {
             "strength": {"min": 14, "max": 17},
@@ -163,7 +182,9 @@
     {
         "profession_name": "monk",
         "display": "Monje",
+        "title": "el Monje",
         "description": "Practicante marcial de disciplina espiritual.",
+        "category": "combat",
         "personality_traits": ["patient", "stoic", "meticulous", "honor_bound"],
         "stat_ranges": {
             "strength": {"min": 14, "max": 17},
@@ -179,7 +200,9 @@
     {
         "profession_name": "warlock",
         "display": "Brujo",
+        "title": "el Brujo",
         "description": "Lanzador mágico oscuro con poderes infernales.",
+        "category": "combat",
         "personality_traits": ["ruthless", "ambitious", "secretive", "cunning"],
         "stat_ranges": {
             "strength": {"min": 11, "max": 14},
@@ -191,5 +214,329 @@
         },
         "primary_skills": ["dark_magic", "eldritch", "hexes"],
         "secondary_skills": ["deception", "insight"]
+    },
+    {
+        "profession_name": "tailor",
+        "display": "Sastre",
+        "title": "el Sastre",
+        "description": "Artesano experto en confección de ropas.",
+        "category": "civilian",
+        "personality_traits": ["meticulous", "patient", "creative", "pragmatic"],
+        "stat_ranges": {
+            "strength": {"min": 10, "max": 13},
+            "dexterity": {"min": 14, "max": 18},
+            "constitution": {"min": 11, "max": 14},
+            "intelligence": {"min": 12, "max": 15},
+            "wisdom": {"min": 12, "max": 15},
+            "charisma": {"min": 11, "max": 15}
+        },
+        "primary_skills": ["tailoring", "craftsmanship", "design"],
+        "secondary_skills": ["negotiation", "materials"]
+    },
+    {
+        "profession_name": "baker",
+        "display": "Panadero",
+        "title": "el Panadero",
+        "description": "Maestro en la elaboración de pan y pastelería.",
+        "category": "civilian",
+        "personality_traits": ["creative", "hardworking", "patient", "honest"],
+        "stat_ranges": {
+            "strength": {"min": 12, "max": 15},
+            "dexterity": {"min": 12, "max": 15},
+            "constitution": {"min": 14, "max": 17},
+            "intelligence": {"min": 11, "max": 14},
+            "wisdom": {"min": 13, "max": 16},
+            "charisma": {"min": 11, "max": 14}
+        },
+        "primary_skills": ["baking", "cooking", "food_preparation"],
+        "secondary_skills": ["negotiation", "management"]
+    },
+    {
+        "profession_name": "cook",
+        "display": "Cocinero",
+        "title": "el Cocinero",
+        "description": "Chef experto en la preparación de alimentos.",
+        "category": "civilian",
+        "personality_traits": ["creative", "passionate", "methodical", "charming"],
+        "stat_ranges": {
+            "strength": {"min": 12, "max": 15},
+            "dexterity": {"min": 13, "max": 16},
+            "constitution": {"min": 13, "max": 16},
+            "intelligence": {"min": 12, "max": 15},
+            "wisdom": {"min": 12, "max": 15},
+            "charisma": {"min": 12, "max": 16}
+        },
+        "primary_skills": ["cooking", "food_knowledge", "preparation"],
+        "secondary_skills": ["negotiation", "hospitality"]
+    },
+    {
+        "profession_name": "farmer",
+        "display": "Granjero",
+        "title": "el Granjero",
+        "description": "Cultivador de tierras y criador de animales.",
+        "category": "civilian",
+        "personality_traits": ["hardworking", "practical", "honest", "independent"],
+        "stat_ranges": {
+            "strength": {"min": 15, "max": 18},
+            "dexterity": {"min": 11, "max": 14},
+            "constitution": {"min": 14, "max": 17},
+            "intelligence": {"min": 10, "max": 13},
+            "wisdom": {"min": 13, "max": 16},
+            "charisma": {"min": 10, "max": 13}
+        },
+        "primary_skills": ["farming", "animal_handling", "agriculture"],
+        "secondary_skills": ["craftsmanship", "survival"]
+    },
+    {
+        "profession_name": "blacksmith",
+        "display": "Herrero",
+        "title": "el Herrero",
+        "description": "Forjador de metales y creador de herramientas.",
+        "category": "civilian",
+        "personality_traits": ["hardworking", "meticulous", "honest", "practical"],
+        "stat_ranges": {
+            "strength": {"min": 16, "max": 19},
+            "dexterity": {"min": 12, "max": 15},
+            "constitution": {"min": 15, "max": 18},
+            "intelligence": {"min": 11, "max": 14},
+            "wisdom": {"min": 12, "max": 15},
+            "charisma": {"min": 10, "max": 13}
+        },
+        "primary_skills": ["blacksmithing", "metalworking", "craftsmanship"],
+        "secondary_skills": ["repair", "design"]
+    },
+    {
+        "profession_name": "carpenter",
+        "display": "Carpintero",
+        "title": "el Carpintero",
+        "description": "Artesano especializado en trabajos con madera.",
+        "category": "civilian",
+        "personality_traits": ["creative", "meticulous", "practical", "honest"],
+        "stat_ranges": {
+            "strength": {"min": 14, "max": 17},
+            "dexterity": {"min": 13, "max": 16},
+            "constitution": {"min": 14, "max": 17},
+            "intelligence": {"min": 11, "max": 14},
+            "wisdom": {"min": 12, "max": 15},
+            "charisma": {"min": 10, "max": 13}
+        },
+        "primary_skills": ["carpentry", "craftsmanship", "design"],
+        "secondary_skills": ["repair", "materials_knowledge"]
+    },
+    {
+        "profession_name": "healer",
+        "display": "Sanador",
+        "title": "el Sanador",
+        "description": "Experto en hierbas medicinales y curación.",
+        "category": "civilian",
+        "personality_traits": ["compassionate", "patient", "meticulous", "honest"],
+        "stat_ranges": {
+            "strength": {"min": 10, "max": 13},
+            "dexterity": {"min": 12, "max": 15},
+            "constitution": {"min": 12, "max": 15},
+            "intelligence": {"min": 13, "max": 16},
+            "wisdom": {"min": 15, "max": 18},
+            "charisma": {"min": 12, "max": 15}
+        },
+        "primary_skills": ["herbalism", "healing", "diagnosis"],
+        "secondary_skills": ["knowledge", "empathy"]
+    },
+    {
+        "profession_name": "innkeeper",
+        "display": "Posadero",
+        "title": "el Posadero",
+        "description": "Dueño de posada y administrador de hospedaje.",
+        "category": "civilian",
+        "personality_traits": ["charming", "hospitable", "practical", "honest"],
+        "stat_ranges": {
+            "strength": {"min": 11, "max": 14},
+            "dexterity": {"min": 11, "max": 14},
+            "constitution": {"min": 12, "max": 15},
+            "intelligence": {"min": 12, "max": 15},
+            "wisdom": {"min": 13, "max": 16},
+            "charisma": {"min": 14, "max": 18}
+        },
+        "primary_skills": ["hospitality", "management", "negotiation"],
+        "secondary_skills": ["cooking", "diplomacy"]
+    },
+    {
+        "profession_name": "guard",
+        "display": "Guardia",
+        "title": "el Guardia",
+        "description": "Soldado o vigilante de orden público.",
+        "category": "combat",
+        "personality_traits": ["brave", "disciplined", "loyal", "honest"],
+        "stat_ranges": {
+            "strength": {"min": 15, "max": 18},
+            "dexterity": {"min": 13, "max": 16},
+            "constitution": {"min": 14, "max": 17},
+            "intelligence": {"min": 11, "max": 14},
+            "wisdom": {"min": 12, "max": 15},
+            "charisma": {"min": 11, "max": 14}
+        },
+        "primary_skills": ["combat", "discipline", "observation"],
+        "secondary_skills": ["tactics", "leadership"]
+    },
+    {
+        "profession_name": "scholar",
+        "display": "Erudito",
+        "title": "el Erudito",
+        "description": "Intelectual versado en conocimiento y magia.",
+        "category": "civilian",
+        "personality_traits": ["curious", "meticulous", "intellectual", "patient"],
+        "stat_ranges": {
+            "strength": {"min": 9, "max": 12},
+            "dexterity": {"min": 11, "max": 14},
+            "constitution": {"min": 10, "max": 13},
+            "intelligence": {"min": 17, "max": 20},
+            "wisdom": {"min": 14, "max": 17},
+            "charisma": {"min": 11, "max": 14}
+        },
+        "primary_skills": ["research", "lore", "linguistics"],
+        "secondary_skills": ["meditation", "writing"]
+    },
+    {
+        "profession_name": "fisherman",
+        "display": "Pescador",
+        "title": "el Pescador",
+        "description": "Experto en la pesca y conocedor del agua.",
+        "category": "civilian",
+        "personality_traits": ["patient", "practical", "independent", "honest"],
+        "stat_ranges": {
+            "strength": {"min": 12, "max": 15},
+            "dexterity": {"min": 12, "max": 15},
+            "constitution": {"min": 13, "max": 16},
+            "intelligence": {"min": 11, "max": 14},
+            "wisdom": {"min": 13, "max": 16},
+            "charisma": {"min": 10, "max": 13}
+        },
+        "primary_skills": ["fishing", "water_knowledge", "survival"],
+        "secondary_skills": ["swimming", "repair"]
+    },
+    {
+        "profession_name": "alchemist",
+        "display": "Alquimista",
+        "title": "el Alquimista",
+        "description": "Especialista en pociones y transmutación.",
+        "category": "civilian",
+        "personality_traits": ["curious", "meticulous", "secretive", "intellectual"],
+        "stat_ranges": {
+            "strength": {"min": 10, "max": 13},
+            "dexterity": {"min": 13, "max": 16},
+            "constitution": {"min": 12, "max": 15},
+            "intelligence": {"min": 15, "max": 18},
+            "wisdom": {"min": 13, "max": 16},
+            "charisma": {"min": 10, "max": 13}
+        },
+        "primary_skills": ["alchemy", "chemistry", "potion_making"],
+        "secondary_skills": ["herbalism", "knowledge"]
+    },
+    {
+        "profession_name": "priest",
+        "display": "Sacerdote",
+        "title": "el Sacerdote",
+        "description": "Servidor religioso y consejero espiritual.",
+        "category": "civilian",
+        "personality_traits": ["compassionate", "honest", "wise", "diplomatic"],
+        "stat_ranges": {
+            "strength": {"min": 10, "max": 13},
+            "dexterity": {"min": 11, "max": 14},
+            "constitution": {"min": 12, "max": 15},
+            "intelligence": {"min": 12, "max": 15},
+            "wisdom": {"min": 17, "max": 20},
+            "charisma": {"min": 13, "max": 17}
+        },
+        "primary_skills": ["counseling", "spirituality", "diplomacy"],
+        "secondary_skills": ["healing", "leadership"]
+    },
+    {
+        "profession_name": "scribe",
+        "display": "Escriba",
+        "title": "el Escriba",
+        "description": "Experto en escritura, documentos y registros.",
+        "category": "civilian",
+        "personality_traits": ["meticulous", "patient", "honest", "organized"],
+        "stat_ranges": {
+            "strength": {"min": 10, "max": 13},
+            "dexterity": {"min": 12, "max": 15},
+            "constitution": {"min": 11, "max": 14},
+            "intelligence": {"min": 13, "max": 16},
+            "wisdom": {"min": 12, "max": 15},
+            "charisma": {"min": 10, "max": 13}
+        },
+        "primary_skills": ["writing", "documentation", "organization"],
+        "secondary_skills": ["linguistics", "research"]
+    },
+    {
+        "profession_name": "jeweler",
+        "display": "Joyero",
+        "title": "el Joyero",
+        "description": "Artesano de joyas y metales preciosos.",
+        "category": "civilian",
+        "personality_traits": ["meticulous", "creative", "honest", "detail_oriented"],
+        "stat_ranges": {
+            "strength": {"min": 11, "max": 14},
+            "dexterity": {"min": 15, "max": 18},
+            "constitution": {"min": 12, "max": 15},
+            "intelligence": {"min": 12, "max": 15},
+            "wisdom": {"min": 12, "max": 15},
+            "charisma": {"min": 11, "max": 15}
+        },
+        "primary_skills": ["craftsmanship", "design", "valuation"],
+        "secondary_skills": ["negotiation", "knowledge"]
+    },
+    {
+        "profession_name": "tanner",
+        "display": "Curtidor",
+        "title": "el Curtidor",
+        "description": "Profesional en el tratamiento de cueros.",
+        "category": "civilian",
+        "personality_traits": ["hardworking", "practical", "honest", "patient"],
+        "stat_ranges": {
+            "strength": {"min": 14, "max": 17},
+            "dexterity": {"min": 12, "max": 15},
+            "constitution": {"min": 14, "max": 17},
+            "intelligence": {"min": 11, "max": 14},
+            "wisdom": {"min": 12, "max": 15},
+            "charisma": {"min": 10, "max": 13}
+        },
+        "primary_skills": ["leatherworking", "craftsmanship", "material_knowledge"],
+        "secondary_skills": ["repair", "design"]
+    },
+    {
+        "profession_name": "miner",
+        "display": "Minero",
+        "title": "el Minero",
+        "description": "Excavador de minerales y gemas.",
+        "category": "civilian",
+        "personality_traits": ["hardworking", "brave", "practical", "honest"],
+        "stat_ranges": {
+            "strength": {"min": 16, "max": 19},
+            "dexterity": {"min": 11, "max": 14},
+            "constitution": {"min": 15, "max": 18},
+            "intelligence": {"min": 10, "max": 13},
+            "wisdom": {"min": 12, "max": 15},
+            "charisma": {"min": 9, "max": 12}
+        },
+        "primary_skills": ["mining", "geology", "survival"],
+        "secondary_skills": ["craftsmanship", "navigation"]
+    },
+    {
+        "profession_name": "artist",
+        "display": "Artista",
+        "title": "el Artista",
+        "description": "Pintor, escultor o creador de arte.",
+        "category": "civilian",
+        "personality_traits": ["creative", "passionate", "sensitive", "independent"],
+        "stat_ranges": {
+            "strength": {"min": 10, "max": 13},
+            "dexterity": {"min": 14, "max": 17},
+            "constitution": {"min": 11, "max": 14},
+            "intelligence": {"min": 12, "max": 15},
+            "wisdom": {"min": 13, "max": 16},
+            "charisma": {"min": 13, "max": 17}
+        },
+        "primary_skills": ["art", "design", "creativity"],
+        "secondary_skills": ["negotiation", "perception"]
     }
 ]
