@@ -1,0 +1,22 @@
+{
+    "world": {
+        "seed": 12345,
+        "player_position": {
+            "x": 74,
+            "y": 64
+        }
+    },
+    "player": {
+        "name": "TestHero",
+        "race": {
+            "Humano": {}
+        },
+        "age": 25,
+        "stats": {
+            "strength": 10,
+            "dexterity": 10,
+            "constitution": 10
+        }
+    },
+    "session_name": "test_session_flow"
+}

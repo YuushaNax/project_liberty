@@ -237,6 +237,6 @@ if __name__ == "__main__":
     
     for race in ["human", "elf", "dwarf", "orc", "halfling", "tiefling"]:
         print(f"\n{race.upper()}:")
-        names = gen.generate_multiple_names(race, 5)
+        names = gen.generate_multiple_names(race, 10)
         for name in names:
             print(f"  - {name}")

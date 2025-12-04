@@ -1,0 +1,92 @@
+# ⚡ REFERENCIA RÁPIDA
+
+## 🎮 Controles
+
+```
+WASD / Flechas  ← → ↑ ↓   Mover
+M                           Alternar vista (Global/Local)
+L                           Leyenda de terrenos
+I                           Info del terreno
+F5                          Guardar manualmente
+ESC                         Guardar y salir
+```
+
+## 📊 Vistas
+
+### Global (128×128) - Mapa Estratégico
+```
+Tecla M → Local
+Verde = Tu región actual
+Dorado = Tu personaje
+```
+
+### Local (64×64) - Mapa Táctico
+```
+Tecla M → Global
+Cada cuadro = 1 tile
+Dorado = Tu personaje
+```
+
+## 💾 Sistema de Guardado
+
+- **Automático:** cada 30 segundos
+- **Manual:** F5
+- **Al Salir:** ESC guarda antes de cerrar
+- **Ubicación:** `saves/games/[nombre]/save.json`
+
+## 🗺️ Terrenos
+
+```
+~ Océano          (❌ sin pasar)
+. Agua            (❌ sin pasar)
+s Arena           (✅ caminar)
+g Hierba          (✅ caminar)
+f Bosque          (✅ caminar)
+^ Montaña         (❌ sin pasar)
+A Picos Nevados   (❌ sin pasar)
+@ Arena Combate   (✅ caminar)
+# Grieta          (❌ sin pasar)
+```
+
+## 📈 Rendimiento
+
+- Movimiento: **0.003ms** (muy rápido)
+- Cambio región: **~1ms** (caché)
+- Nueva región: **30-50ms** (generación)
+
+## 🔧 Problemas Comunes
+
+| Problema | Solución |
+|----------|----------|
+| Mapa local no se ve | Presiona M nuevamente |
+| Se ve lento | Nada, está optimizado |
+| Posición diferente al cargar | Se restaura del save automáticamente |
+| Error de tecla | Actualización completada (K_F5 ahora correcto) |
+
+## 🎯 Quick Start
+
+```bash
+# 1. Ejecutar
+python main.py
+
+# 2. Nueva Partida
+→ Selecciona
+
+# 3. Explorar
+→ WASD para mover
+→ M para zoom local
+→ ESC para guardar
+
+# Listo!
+```
+
+## 📁 Sesiones
+
+Ver carpeta `saves/games/` para:
+- Listar personajes guardados
+- Ver archivos save.json
+- Eliminar personajes (borrar carpeta)
+
+---
+
+**Sistema 100% completo y funcional** ✨

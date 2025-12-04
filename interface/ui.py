@@ -2,7 +2,7 @@ import pygame as pg
 from screeninfo import get_monitors
 
 def initialize_game():
-    pg.init()  # 🔹 Inicializa pygame (input, sonido, etc.)
+    pg.init()  # Inicializa pygame (input, sonido, etc.)
 
     for monitor in get_monitors():
         if monitor.is_primary:
@@ -11,7 +11,7 @@ def initialize_game():
     screen = pg.display.set_mode((width, height))
     pg.display.set_caption("Project Liberty")
 
-    # 🔹 Solo ahora importamos las pantallas (ya hay display y fuentes listas)
+    # Solo ahora importamos las pantallas (ya hay display y fuentes listas)
     from interface import screens as scr  
 
     menu = scr.main_menu.MainMenu(screen)
@@ -21,10 +21,10 @@ def initialize_game():
         pg.quit()
         raise SystemExit
     elif choice == "Nueva Partida":
-        print("→ Crear nueva partida")
+        print("[NUEVO] Crear nueva partida")
         menu = scr.create_player.CreatePlayer(screen)
         menu.run()
     elif choice == "Cargar Partida":
-        print("→ Cargar partida")
+        print("[CARGAR] Cargar partida guardada")
         menu = scr.load_player.LoadPlayer(screen)
         menu.run()

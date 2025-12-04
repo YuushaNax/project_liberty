@@ -1,0 +1,29 @@
+{
+    "world": {
+        "seed": 442167797,
+        "player_position": {
+            "x": 65,
+            "y": 81
+        }
+    },
+    "player": {
+        "name": "kjkhbg",
+        "race": {
+            "human": 100
+        },
+        "age": 15,
+        "stats": {
+            "strength": 10,
+            "agility": 9,
+            "dexterity": 10,
+            "constitution": 10,
+            "intellect": 10,
+            "psique": 10,
+            "will": 10,
+            "perception": 11,
+            "education": 30,
+            "charisma": 21
+        }
+    },
+    "session_name": "kjkhbg"
+}

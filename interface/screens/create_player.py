@@ -6,6 +6,7 @@ import os
 from pathlib import Path
 from .base_screen import BaseScreen
 from .text_input import TextInput
+from .exploration import Exploration
 from engine.entities.entity import Entity
 
 # === CONFIGURACIÓN DE INTERFAZ ===
@@ -449,7 +450,7 @@ class CreatePlayer(BaseScreen):
             else:
                 draw_centered(self.screen, "Sin eventos registrados", small_font, GRAY, 460)
             
-            draw_centered(self.screen, "Presiona ENTER para continuar", FONT, GRAY, 650)
+            draw_centered(self.screen, "Presiona ENTER para comenzar tu aventura", FONT, GRAY, 650)
 
             pg.display.flip()
             self.clock.tick(30)
@@ -460,3 +461,33 @@ class CreatePlayer(BaseScreen):
                     raise SystemExit
                 elif event.type == pg.KEYDOWN and event.key == pg.K_RETURN:
                     waiting = False
+        
+        # Transición a exploración
+        self.start_exploration()
+    
+    def start_exploration(self):
+        """Inicia la pantalla de exploración del mundo."""
+        # Preparar datos del jugador para la exploración
+        player_data = {
+            "name": self.name,
+            "race": self.selected_race.get("race_name", self.selected_race.get("display")),
+            "age": self.age,
+            "stats": self.stats,
+            "race": {self.selected_race.get("race_name", self.selected_race.get("display")): 100},
+        }
+        
+        # Usar hash del nombre como semilla para reproducibilidad
+        import hashlib
+        seed = int(hashlib.md5(self.name.encode()).hexdigest(), 16) % (2**31)
+        
+        # Usar nombre del personaje como nombre de sesión
+        session_name = self.name.lower().replace(" ", "_")
+        
+        # Crear y ejecutar pantalla de exploración
+        exploration_screen = Exploration(
+            self.screen,
+            player_data=player_data,
+            world_seed=seed,
+            session_name=session_name
+        )
+        exploration_screen.run()
